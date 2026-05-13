@@ -2386,7 +2386,6 @@ const HANJA_DB = {
     { char: "纜", meaning: "닻줄 람" },
     { char: "藍", meaning: "쪽 람" },
     { char: "襤", meaning: "누더기 람" },
-    { char: "覧", meaning: "볼 람" },
     { char: "覽", meaning: "볼 람" },
   ],
   "랍": [
