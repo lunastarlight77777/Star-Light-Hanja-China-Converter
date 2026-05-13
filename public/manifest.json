@@ -1,6 +1,12 @@
 {
   "name": "한글 이름 한자-중국어 변환기",
-  "short_name": "한자-중국어 변환기",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/starlight_hanja-china_converter_logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
 }
