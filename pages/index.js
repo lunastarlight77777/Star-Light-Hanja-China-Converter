@@ -163,7 +163,7 @@ export default function Home() {
               style={s.input}
               value={convertInput}
               onChange={e => setConvertInput(e.target.value)}
-              placeholder="한자 입력 또는 위에서 복사 (예: 金河覽)"
+              placeholder="한자 입력 또는 위에서 복사"
             />
 
             <button
