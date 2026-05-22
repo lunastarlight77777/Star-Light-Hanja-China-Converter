@@ -2959,7 +2959,7 @@ const HANJA_DB = {
     { char: "縛", meaning: "묶을 박" },
     { char: "膊", meaning: "포 박" },
     { char: "舶", meaning: "배 박" },
-    { char: "薄", meaning: "숲 박" },
+    { char: "薄", meaning: "엷을 박/박할 박" },
     { char: "趵", meaning: "차는 소리 박" },
     { char: "迫", meaning: "닥칠 박" },
     { char: "鉑", meaning: "금박 박" },
