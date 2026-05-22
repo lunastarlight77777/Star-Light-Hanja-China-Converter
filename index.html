@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Star Light Hanja-China Converter</title>
+  <link rel="icon" type="image/png" href="starlight_hanja-china_converter_logo.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: #FAFAF8;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .wrap { width: 100%; max-width: 520px; }
+
+    /* 헤더 */
+    .header { text-align: center; margin-bottom: 1.5rem; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #DE2910; margin: 0 auto 1rem; }
+    .title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .sub { font-size: 13px; color: #999; }
+
+    /* 카드 */
+    .card {
+      background: #fff;
+      border: 1px solid #E8E8E4;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: 12px; color: #DE2910; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 12px;
+    }
+
+    /* 선택된 한자 칩 */
+    .selected-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .chip {
+      display: flex; align-items: center; gap: 4px;
+      background: #FEF0EE; border: 1px solid #f5c6be;
+      border-radius: 8px; padding: 4px 10px;
+    }
+    .chip-hanja { font-size: 18px; font-weight: 600; color: #1a1a1a; }
+    .chip-korean { font-size: 11px; color: #999; }
+    .chip-remove {
+      background: none; border: none; color: #ccc;
+      cursor: pointer; font-size: 16px; padding: 0; line-height: 1;
+    }
+
+    /* 버튼들 */
+    .find-btn {
+      width: 100%; padding: 10px 0; background: #FAFAF8;
+      border: 1.5px dashed #D0D0CA; border-radius: 10px;
+      font-size: 14px; color: #888; cursor: pointer; font-family: inherit;
+    }
+    .find-btn:hover { background: #f0f0ec; }
+
+    .result-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      margin-top: 12px; padding-top: 12px;
+      border-top: 1px solid #F0F0EC;
+    }
+    .full-hanja { font-size: 28px; font-weight: 600; letter-spacing: 0.1em; color: #1a1a1a; }
+    .copy-btn {
+      padding: 8px 14px; background: #1a1a1a; border: none;
+      border-radius: 8px; color: #fff; font-size: 13px;
+      cursor: pointer; font-family: inherit;
+    }
+    .copy-btn:hover { background: #333; }
+
+    /* 2단계 */
+    .input-field {
+      width: 100%; font-size: 16px; padding: 10px 12px;
+      border: 1px solid #E8E8E4; border-radius: 8px;
+      background: #FAFAF8; outline: none; font-family: inherit;
+    }
+    .convert-btn {
+      width: 100%; padding: 13px; background: #DE2910; border: none;
+      border-radius: 10px; color: #fff; font-size: 15px; font-weight: 500;
+      cursor: pointer; font-family: inherit; margin-top: 10px;
+    }
+    .convert-btn:hover { background: #c0230d; }
+    .convert-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .error-msg { color: #c0392b; font-size: 14px; margin-top: 8px; }
+
+    /* 결과 카드 */
+    .result-card { margin-top: 16px; padding-top: 16px; border-top: 1px solid #F0F0EC; }
+    .result-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+    .simplified { font-size: 36px; font-weight: 700; letter-spacing: 0.12em; color: #1a1a1a; margin-bottom: 4px; }
+    .pinyin { font-size: 18px; color: #555; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .kor-pron { font-size: 14px; color: #888; margin-top: 4px; }
+    .speak-btn { font-size: 28px; background: none; border: none; cursor: pointer; padding: 8px; }
+    .char-grid { display: flex; gap: 10px; flex-wrap: wrap; }
+    .char-box {
+      background: #FAFAF8; border: 1px solid #E8E8E4;
+      border-radius: 10px; padding: 10px 14px; text-align: center;
+    }
+    .char-simp { font-size: 26px; font-weight: 600; color: #1a1a1a; }
+    .char-pinyin { font-size: 13px; color: #DE2910; margin-top: 2px; }
+    .char-info { font-size: 11px; color: #aaa; margin-top: 2px; }
+    .char-kor-pron { font-size: 12px; color: #888; margin-top: 2px; }
+
+    .footer { text-align: center; font-size: 12px; color: #ccc; margin-top: 1.5rem; }
+
+    /* 모달 */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.4);
+      display: flex; align-items: flex-end; justify-content: center;
+      z-index: 1000;
+    }
+    .overlay.hidden { display: none; }
+    .modal {
+      background: #fff; border-radius: 16px 16px 0 0;
+      width: 100%; max-width: 520px;
+      padding: 1.25rem 1.25rem 2rem;
+      max-height: 80vh; display: flex; flex-direction: column;
+    }
+    .modal-header {
+      display: flex; justify-content: space-between;
+      align-items: center; margin-bottom: 12px;
+    }
+    .modal-title { font-size: 16px; font-weight: 600; color: #1a1a1a; }
+    .modal-close {
+      background: none; border: none; font-size: 18px;
+      cursor: pointer; color: #aaa; padding: 4px;
+    }
+    .modal-input {
+      width: 100%; font-size: 16px; padding: 10px 12px;
+      border: 1px solid #E8E8E4; border-radius: 8px;
+      background: #FAFAF8; outline: none; font-family: inherit;
+      margin-bottom: 10px;
+    }
+    .tab-row { display: flex; gap: 8px; margin-bottom: 12px; }
+    .tab {
+      flex: 1; padding: 8px 0; border: 1px solid #E8E8E4;
+      border-radius: 8px; background: #FAFAF8; font-size: 13px;
+      color: #888; cursor: pointer; font-family: inherit;
+    }
+    .tab.active { background: #DE2910; color: #fff; border-color: #DE2910; }
+    .modal-results {
+      overflow-y: auto; flex: 1;
+      display: flex; flex-wrap: wrap; gap: 8px;
+      align-content: flex-start; padding-top: 4px;
+    }
+    .modal-msg { font-size: 13px; color: #aaa; width: 100%; text-align: center; margin-top: 20px; }
+    .result-item {
+      display: flex; flex-direction: column; align-items: center;
+      padding: 10px 14px; border: 1px solid #E8E8E4;
+      border-radius: 10px; background: #fff; cursor: pointer;
+      min-width: 60px; font-family: inherit;
+    }
+    .result-item:hover { background: #FEF0EE; border-color: #f5c6be; }
+    .result-char { font-size: 24px; font-weight: 600; color: #1a1a1a; }
+    .result-meaning { font-size: 11px; color: #999; margin-top: 2px; white-space: nowrap; }
+
+    /* 로딩 스피너 */
+    .loading { text-align: center; color: #aaa; font-size: 13px; padding: 20px 0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="dot"></div>
+    <h1 class="title">한국어 이름 한자-중국어 변환기</h1>
+    <p class="sub">한국어 이름 → 한자 선택 → 중국어 변환</p>
+  </div>
+
+  <!-- 1단계 -->
+  <div class="card">
+    <div class="section-title">1단계 — 한자 선택</div>
+    <div class="selected-row" id="selectedRow"></div>
+    <button class="find-btn" onclick="openModal()">+ 한자 찾기</button>
+    <div class="result-row" id="resultRow" style="display:none">
+      <span class="full-hanja" id="fullHanja"></span>
+      <button class="copy-btn" onclick="copyHanja()">복사 + 아래에 붙여넣기</button>
+    </div>
+  </div>
+
+  <!-- 2단계 -->
+  <div class="card">
+    <div class="section-title">2단계 — 중국어 변환</div>
+    <input class="input-field" id="convertInput" placeholder="한자 입력 또는 위에서 복사" />
+    <button class="convert-btn" id="convertBtn" onclick="convertToChinese()">중국어로 변환 →</button>
+    <p class="error-msg" id="convertError" style="display:none"></p>
+    <div class="result-card" id="convertResult" style="display:none"></div>
+  </div>
+
+  <p class="footer">Produced by lunastarlight777</p>
+</div>
+
+<!-- 모달 -->
+<div class="overlay hidden" id="overlay" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <span class="modal-title">한자 찾기</span>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <input class="modal-input" id="modalInput" placeholder="음 입력" oninput="handleSearchInput(this.value)" />
+    <div class="tab-row">
+      <button class="tab active" id="tabSound" onclick="switchMode('sound')">음으로 찾기</button>
+      <button class="tab" id="tabMeaning" onclick="switchMode('meaning')">뜻으로 찾기</button>
+    </div>
+    <div class="modal-results" id="modalResults">
+      <p class="modal-msg">위에 검색어를 입력해보세요.</p>
+    </div>
+  </div>
+</div>
+
+<script src="hanja_db.js"></script>
+<script>
+// ============================================================
+// 설정 - 여기에 Groq API 키 입력
+// ============================================================
+const GROQ_API_KEY = "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";
+
+// ============================================================
+// 발음 가이드
+// ============================================================
+const PINYIN_GUIDE = `
+================================================================
+한어병음(汉语拼音) 발음 규칙
+================================================================
+[성모 발음]
+b[ㅂ] p[ㅍ] m[ㅁ] f[영어f, ㅍ아님]
+d[ㄷ] t[ㅌ] n[ㄴ] l[ㄹ]
+g[ㄱ] k[ㅋ] h[ㅎ]
+j[ㅈ] q[ㅊ] x[ㅅ/ㅆ]
+zh[쯔/혀말기] ch[츠/혀말기] sh[스/혀말기] r[르/혀말기]
+z[쯔] c[츠] s[스]
+평음: b d g j zh z → 된소리에 가깝게
+유기음: p t k q ch c → 강한 기식
+
+[운모 발음]
+a[아] o[오] e[으/어] i[이] u[우] ü[위]
+ai[아이] ei[에이] ui[웨이] ao[아오] ou[오우] iu[여우]
+ia[이아] ie[이에] ua[우아] uo[우어] üe[위에]
+an[안] en[언] in[인] un[운] ün[윈]
+ang[앙] eng[엉] ing[잉] ong[옹]
+ian[이엔] uan[우안] üan[위엔]
+iang[이앙] uang[우앙] iong[이옹]
+er[얼]
+
+[특수 음절]
+zhi[쯔] chi[츠] shi[스] ri[르]
+zi[쯔] ci[츠] si[스]
+ju[쥐] qu[취] xu[쉬] yu[위]
+ye[이에] yue[위에] yuan[위엔]
+wan[완] wang[왕] wen[원]
+
+[한국어 표기 원칙]
+- 실제 중국어 보통화 발음 기준
+- 절대 한국식 한자 음으로 쓰면 안 됨
+- 예시: 金→찐, 美→메이, 河→흐어, 李→리, 朴→뽀
+        林→린, 張→쨩, 王→왕, 陽→양, 龍→롱
+================================================================
+`;
+
+// ============================================================
+// 상태
+// ============================================================
+let selectedChars = [];
+let searchMode = "sound";
+let searchTimer = null;
+
+// ============================================================
+// 1단계 - 한자 선택
+// ============================================================
+function renderSelected() {
+  const row = document.getElementById("selectedRow");
+  const resultRow = document.getElementById("resultRow");
+  const fullHanja = document.getElementById("fullHanja");
+
+  row.innerHTML = selectedChars.map((c, i) => `
+    <div class="chip">
+      <span class="chip-hanja">${c.hanja}</span>
+      <span class="chip-korean">${c.korean}</span>
+      <button class="chip-remove" onclick="removeChar(${i})">×</button>
+    </div>
+  `).join("");
+
+  if (selectedChars.length > 0) {
+    const full = selectedChars.map(c => c.hanja).join("");
+    fullHanja.textContent = full;
+    resultRow.style.display = "flex";
+  } else {
+    resultRow.style.display = "none";
+  }
+}
+
+function removeChar(i) {
+  selectedChars.splice(i, 1);
+  renderSelected();
+}
+
+function copyHanja() {
+  const full = selectedChars.map(c => c.hanja).join("");
+  const hint = selectedChars.map(c => `${c.hanja}(${c.korean})`).join("");
+  navigator.clipboard.writeText(full).catch(() => {});
+  document.getElementById("convertInput").value = full;
+  window._convertHint = hint;
+}
+
+// ============================================================
+// 모달
+// ============================================================
+function openModal() {
+  document.getElementById("overlay").classList.remove("hidden");
+  setTimeout(() => document.getElementById("modalInput").focus(), 100);
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById("overlay")) closeModalDirect();
+}
+
+function closeModalDirect() {
+  document.getElementById("overlay").classList.add("hidden");
+  document.getElementById("modalInput").value = "";
+  document.getElementById("modalResults").innerHTML = '<p class="modal-msg">위에 검색어를 입력해보세요.</p>';
+}
+
+function switchMode(mode) {
+  searchMode = mode;
+  document.getElementById("tabSound").classList.toggle("active", mode === "sound");
+  document.getElementById("tabMeaning").classList.toggle("active", mode === "meaning");
+  document.getElementById("modalInput").placeholder = mode === "sound" ? "음 입력 (예: 미)" : "뜻 입력 (예: 아름다울)";
+  document.getElementById("modalInput").value = "";
+  document.getElementById("modalResults").innerHTML = '<p class="modal-msg">위에 검색어를 입력해보세요.</p>';
+}
+
+function handleSearchInput(val) {
+  if (searchTimer) clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => doSearch(val), 300);
+}
+
+function doSearch(query) {
+  const resultsEl = document.getElementById("modalResults");
+  if (!query.trim()) {
+    resultsEl.innerHTML = '<p class="modal-msg">위에 검색어를 입력해보세요.</p>';
+    return;
+  }
+
+  resultsEl.innerHTML = '<p class="modal-msg">검색 중...</p>';
+
+  let results = [];
+  const keyword = query.trim();
+
+  if (searchMode === "sound") {
+    const list = HANJA_DB[keyword] || [];
+    const seen = new Set();
+    results = list.filter(h => {
+      if (seen.has(h.char)) return false;
+      seen.add(h.char);
+      const code = h.char.codePointAt(0);
+      return code >= 0x4E00 && code <= 0x9FFF;
+    }).map(h => ({ ...h, reading: keyword }));
+  } else {
+    const seen = new Set();
+    for (const [sound, list] of Object.entries(HANJA_DB)) {
+      for (const h of list) {
+        if (h.meaning.includes(keyword) && !seen.has(h.char)) {
+          seen.add(h.char);
+          const code = h.char.codePointAt(0);
+          if (code >= 0x4E00 && code <= 0x9FFF) {
+            results.push({ ...h, reading: sound });
+          }
+          if (results.length >= 30) break;
+        }
+      }
+      if (results.length >= 30) break;
+    }
+  }
+
+  if (results.length === 0) {
+    resultsEl.innerHTML = '<p class="modal-msg">결과가 없어요.</p>';
+    return;
+  }
+
+  resultsEl.innerHTML = results.map((h, i) => `
+    <button class="result-item" onclick="selectHanja(${i})">
+      <span class="result-char">${h.char}</span>
+      <span class="result-meaning">${h.meaning}</span>
+    </button>
+  `).join("");
+
+  // 결과를 전역에 임시 저장
+  window._searchResults = results;
+}
+
+function selectHanja(i) {
+  const h = window._searchResults[i];
+  const reading = h.reading || document.getElementById("modalInput").value.trim();
+  selectedChars.push({ korean: reading, hanja: h.char, meaning: h.meaning });
+  renderSelected();
+  closeModalDirect();
+}
+
+// ============================================================
+// 2단계 - 중국어 변환
+// ============================================================
+async function convertToChinese() {
+  const input = document.getElementById("convertInput").value.trim();
+  if (!input) return;
+
+  const btn = document.getElementById("convertBtn");
+  const errorEl = document.getElementById("convertError");
+  const resultEl = document.getElementById("convertResult");
+
+  btn.disabled = true;
+  btn.textContent = "변환 중...";
+  errorEl.style.display = "none";
+  resultEl.style.display = "none";
+
+  const hint = window._convertHint || "";
+  const chars = [...input];
+
+  // DB에서 발음 조회
+  const dbLookup = chars.map(c => {
+    const entry = HANJA_PRON_DB[c];
+    if (entry) return `${c}→${entry.pron}(${entry.pinyin})`;
+    return null;
+  }).filter(Boolean);
+
+  const dbHint = dbLookup.length > 0
+    ? `\n\n[DB 발음 참고 - 반드시 이 발음 사용]\n${dbLookup.join(", ")}`
+    : "";
+
+  const systemPrompt = `당신은 한자→중국어 변환 전문가입니다. 반드시 순수 JSON만 응답하고 설명, 마크다운, 백틱은 절대 포함하지 마세요.\n\n아래 한어병음 발음 규칙을 반드시 참고하여 korean_pronunciation을 작성하세요:\n${PINYIN_GUIDE}`;
+
+  const userPrompt = `한자 이름 "${input}"를 중국어로 변환해줘.
+${hint ? `각 한자의 한국어 음 힌트: ${hint}` : ""}
+${dbHint}
+
+반드시 아래 JSON 형식으로만 응답해. 설명, 마크다운, 백틱 없이 순수 JSON만:
+{
+  "original": "${input}",
+  "chars": [
+    {
+      "hanja": "金",
+      "simplified": "金",
+      "pinyin": "Jīn",
+      "korean_reading": "김",
+      "korean_pronunciation": "찐"
+    }
+  ],
+  "full_pinyin": "Jīn Jīn Měi",
+  "full_simplified": "金金美",
+  "full_korean_pronunciation": "찐찐메이"
+}
+
+규칙:
+- chars는 각 글자별로 분리
+- simplified는 중국 간화자로 변환
+- pinyin은 성조 포함
+- korean_reading은 해당 한자의 한국어 음
+- korean_pronunciation은 DB 발음 참고 항목이 있으면 반드시 그대로 사용, 없으면 발음 규칙 참고해서 실제 중국어 보통화 발음 표기
+- full_korean_pronunciation은 전체 중국어 발음 한국어 표기`;
+
+  try {
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${GROQ_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "llama-3.3-70b-versatile",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userPrompt }
+        ],
+        temperature: 0.1,
+        max_tokens: 1000,
+      }),
+    });
+
+    const data = await response.json();
+    const text = data.choices?.[0]?.message?.content || "";
+    const clean = text.replace(/```json|```/g, "").trim();
+    const parsed = JSON.parse(clean);
+
+    renderResult(parsed);
+  } catch (err) {
+    errorEl.textContent = "변환 중 오류가 발생했어요.";
+    errorEl.style.display = "block";
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "중국어로 변환 →";
+  }
+}
+
+function renderResult(data) {
+  const el = document.getElementById("convertResult");
+  el.style.display = "block";
+  el.innerHTML = `
+    <div class="result-top">
+      <div>
+        <div class="simplified">${data.full_simplified}</div>
+        <div class="pinyin">${data.full_pinyin}</div>
+        <div class="kor-pron">한국어 발음: ${data.full_korean_pronunciation}</div>
+      </div>
+      <button class="speak-btn" onclick="speak('${data.full_simplified}')" title="중국어로 듣기">🔊</button>
+    </div>
+    <div class="char-grid">
+      ${(data.chars || []).map(c => `
+        <div class="char-box">
+          <div class="char-simp">${c.simplified}</div>
+          <div class="char-pinyin">${c.pinyin}</div>
+          <div class="char-info">${c.hanja} · ${c.korean_reading}</div>
+          <div class="char-kor-pron">${c.korean_pronunciation}</div>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function speak(text) {
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = "zh-CN";
+  utter.rate = 0.8;
+  window.speechSynthesis.speak(utter);
+}
+</script>
+</body>
+</html>
