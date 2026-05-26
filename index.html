@@ -143,7 +143,7 @@
 
 <script src="hanja_db.js"></script>
 <script>
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "여기에_GROQ_API_키_입력";
 
 const PINYIN_GUIDE = `
 ================================================================
@@ -368,19 +368,15 @@ async function startConvert() {
 
 // Groq에 간화자만 요청
 async function getSimplified(hanja) {
-  const prompt = `다음 한자들을 중국 간화자로 변환해줘: "${hanja}"
-반드시 아래 JSON 형식으로만 응답해. 설명, 마크다운, 백틱 없이 순수 JSON만:
-{"${[...hanja].join('":"?","')}":"?"}
-각 한자의 간화자만 넣어줘. 간화자가 없으면 원래 한자 그대로.`;
-
-  const key = GROQ_API_KEY.replace(/[^\x20-\x7E]/g, "").trim();
-  const headers = new Headers();
-  headers.append("Content-Type", "application/json");
-  headers.append("Authorization", "Bearer " + key);
+  const chars = [...hanja];
+  const prompt = "Convert each of these traditional Chinese/Korean hanja characters to simplified Chinese. Reply with ONLY a JSON object like {char: simplified}. Use the original if no simplified form exists. Characters: " + chars.join(", ");
 
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: headers,
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer " + GROQ_API_KEY,
+    },
     body: JSON.stringify({
       model: "llama-3.3-70b-versatile",
       messages: [{ role: "user", content: prompt }],
