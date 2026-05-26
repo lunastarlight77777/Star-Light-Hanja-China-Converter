@@ -373,12 +373,14 @@ async function getSimplified(hanja) {
 {"${[...hanja].join('":"?","')}":"?"}
 각 한자의 간화자만 넣어줘. 간화자가 없으면 원래 한자 그대로.`;
 
+  const key = GROQ_API_KEY.replace(/[^\x20-\x7E]/g, "").trim();
+  const headers = new Headers();
+  headers.append("Content-Type", "application/json");
+  headers.append("Authorization", "Bearer " + key);
+
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": "Bearer " + GROQ_API_KEY,
-    },
+    headers: headers,
     body: JSON.stringify({
       model: "llama-3.3-70b-versatile",
       messages: [{ role: "user", content: prompt }],
