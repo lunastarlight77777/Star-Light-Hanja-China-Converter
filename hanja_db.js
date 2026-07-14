@@ -626,6 +626,8 @@ const HANJA_DB = {
     { char: "鯁", meaning: "생선뼈 경" },
     { char: "鯨", meaning: "고래 경" },
     { char: "黥", meaning: "묵형할 경" },
+    { char: "莔", meaning: "어저귀 경" }
+  ,
   ],
   "계": [
     { char: "乩", meaning: "점칠 계" },
@@ -952,6 +954,8 @@ const HANJA_DB = {
     { char: "鸛", meaning: "황새 관" },
     { char: "鸛", meaning: "환단 환" },
     { char: "鸛", meaning: "구욕새 권" },
+    { char: "毌", meaning: "꿰뚫을 관" }
+  ,
   ],
   "괄": [
     { char: "佸", meaning: "힘 쓸 괄" },
@@ -1440,6 +1444,8 @@ const HANJA_DB = {
     { char: "馗", meaning: "아홉거리 규" },
     { char: "馗", meaning: "길거리 구" },
     { char: "馗", meaning: "광대뼈 구" },
+    { char: "鷚", meaning: "종달새 규" }
+  ,
   ],
   "균": [
     { char: "亀", meaning: "터질 균" },
@@ -1879,6 +1885,8 @@ const HANJA_DB = {
     { char: "臑", meaning: "육장 눈" },
     { char: "臑", meaning: "팔뼈 유" },
     { char: "駑", meaning: "둔할 노" },
+    { char: "㚢", meaning: "종 노" }
+  ,
   ],
   "녹": [
     { char: "角", meaning: "사람이름 녹" },
@@ -1929,6 +1937,8 @@ const HANJA_DB = {
   "누": [
     { char: "耨", meaning: "김맬 누" },
     { char: "耨", meaning: "김맬 녹" },
+    { char: "䨲", meaning: "토끼 새끼 누" }
+  ,
   ],
   "눈": [
     { char: "嫩", meaning: "언약할 눈" },
@@ -2282,6 +2292,8 @@ const HANJA_DB = {
     { char: "韜", meaning: "활집 도" },
     { char: "饕", meaning: "탐할 도" },
     { char: "鼗", meaning: "땡땡이 도" },
+    { char: "朷", meaning: "고갱이 도" }
+  ,
   ],
   "독": [
     { char: "匵", meaning: "손궤 독" },
@@ -2324,6 +2336,8 @@ const HANJA_DB = {
     { char: "躉", meaning: "거룻배 돈" },
     { char: "遁", meaning: "달아날 돈" },
     { char: "頓", meaning: "조아릴 돈" },
+    { char: "㢯", meaning: "활 돈" }
+  ,
   ],
   "돌": [
     { char: "乭", meaning: "이름 돌" },
@@ -3668,8 +3682,12 @@ const HANJA_DB = {
     { char: "亇", meaning: "망치 마" },
     { char: "亍", meaning: "땅 이름 마" },
     { char: "傌", meaning: "욕할 마" },
+    { char: "傌", meaning: "꾸짖을 매" },
     { char: "劘", meaning: "깍을 마" },
+    { char: "劘", meaning: "나눌 미" },
     { char: "哶", meaning: "양울 마" },
+    { char: "哶", meaning: "양 울 미" },
+    { char: "哶", meaning: "양 울 먀" },
     { char: "嗎", meaning: "꾸짖을 마" },
     { char: "嘛", meaning: "나마 마" },
     { char: "媽", meaning: "어미 마" },
@@ -3683,24 +3701,192 @@ const HANJA_DB = {
     { char: "麻", meaning: "삼 마" },
     { char: "麼", meaning: "작을 마" },
     { char: "麽", meaning: "잘 마" },
+    { char: "磨", meaning: "갈 마" },
+    { char: "貉", meaning: "제사 이름 마" },
+    { char: "碼", meaning: "마노 마" },
+    { char: "禡", meaning: "마제 마" },
+    { char: "么", meaning: "작을 마" },
+    { char: "蟆", meaning: "두꺼비 마" },
+    { char: "马", meaning: "말 마" },
+    { char: "妈", meaning: "어머니 마" },
+    { char: "吗", meaning: "아편 마" },
+    { char: "㐃", meaning: "망치 마" },
+    { char: "码", meaning: "마노 마" },
+    { char: "嬤", meaning: "엄마 마" },
+    { char: "麿", meaning: "그대 마" },
+    { char: "攠", meaning: "갈 마" },
+    { char: "䊳", meaning: "부술 마" },
+    { char: "蘑", meaning: "마고 마" },
+    { char: "玛", meaning: "마노 마" },
+    { char: "蔴", meaning: "삼 마" },
+    { char: "懡", meaning: "부끄러울 마" },
+    { char: "塺", meaning: "티끌 마" },
+    { char: "䃺", meaning: "갈 마" },
+    { char: "蚂", meaning: "말거머리 마" },
+    { char: "饃", meaning: "떡 마" },
+    { char: "尛", meaning: "작을 마" },
+    { char: "馍", meaning: "떡 마" },
+    { char: "嬷", meaning: "엄마 마" },
+    { char: "㦄", meaning: "수수께끼 마" },
+    { char: "嚒", meaning: "그런가 마" },
+    { char: "䲈", meaning: "두꺼비 마" },
+    { char: "䲈", meaning: "참치 마" },
+    { char: "犘", meaning: "소 이름 마" },
+    { char: "榪", meaning: "가로대 마" },
+    { char: "䯢", meaning: "작을 마" },
+    { char: "䯢", meaning: "중풍 마" },
+    { char: "擵", meaning: "문지를 마" },
+    { char: "嘜", meaning: "상표 마" },
+    { char: "䗫", meaning: "두꺼비 마" },
+    { char: "䧞", meaning: "더할 마" },
+    { char: "嚤", meaning: "느릴 마" },
+    { char: "唛", meaning: "상표 마" },
+    { char: "䭩", meaning: "먹일 마" },
+    { char: "藦", meaning: "새박 마" },
+    { char: "䳸", meaning: "기러기 마" },
+    { char: "饝", meaning: "떡 마" },
+    { char: "耱", meaning: "넓게 갈 마" },
+    { char: "戂", meaning: "괴로울 마" },
+    { char: "杩", meaning: "가로대 마" },
+    { char: "䩋", meaning: "겉이 푸른  마" },
+    { char: "㾺", meaning: "눈병 마" },
+    { char: "祃", meaning: "마제 마" },
+    { char: "嫲", meaning: "여자의 미칭 마" },
+    { char: "鰢", meaning: "해마 마" },
+    { char: "鬕", meaning: "관자놀이 마" },
+    { char: "鎷", meaning: "마수륨 마" },
+    { char: "礳", meaning: "땅 이름 마" },
+    { char: "犸", meaning: "짐승 이름 마" },
+    { char: "嚰", meaning: "어조사 마" },
+    { char: "獁", meaning: "짐승 이름 마" },
+    { char: "鷌", meaning: "새 이름 마" },
+    { char: "䜆", meaning: "얕보는 말 마" },
+    { char: "髍", meaning: "중풍 들 마" },
+    { char: "䣕", meaning: "현 이름 마" },
+    { char: "䣖", meaning: "현 이름 마" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "막": [
     { char: "嗼", meaning: "고요할 막" },
     { char: "寞", meaning: "쓸쓸할 막" },
     { char: "幕", meaning: "막 막" },
+    { char: "幕", meaning: "화폐 뒷면 만" },
     { char: "漠", meaning: "사막 막" },
     { char: "瞙", meaning: "눈 흐릴 막" },
     { char: "莫", meaning: "없을 막" },
+    { char: "莫", meaning: "저물 모" },
+    { char: "莫", meaning: "덮을 멱" },
     { char: "貌", meaning: "모뜰 막" },
     { char: "邈", meaning: "멀 막" },
     { char: "鏌", meaning: "칼 이름 막" },
+    { char: "蟆", meaning: "파리매 막" },
+    { char: "瘼", meaning: "병들 막" },
+    { char: "瞀", meaning: "번민할 막" },
+    { char: "䒬", meaning: "없을 막" },
+    { char: "幙", meaning: "장막 막" },
+    { char: "瞐", meaning: "눈매 예쁠 막" },
+    { char: "暯", meaning: "어두울 막" },
+    { char: "鄚", meaning: "고을 이름 막" },
+    { char: "縸", meaning: "그물 친 모 막" },
+    { char: "㠳", meaning: "장막 막" },
+    { char: "劰", meaning: "부지런할 막" },
+    { char: "萛", meaning: "말다 막" },
+    { char: "㦝", meaning: "아름다울 막" },
+    { char: "塻", meaning: "티끌 막" },
+    { char: "㱳", meaning: "죽어 쓸쓸할 막" },
+    { char: "镆", meaning: "칼 이름 막" },
+    { char: "㷬", meaning: "불타는 모양 막" },
+    { char: "䮬", meaning: "말 이름 막" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "만": [
     { char: "僈", meaning: "얕볼 만" },
     { char: "卍", meaning: "만자 만" },
     { char: "墁", meaning: "흙손 만" },
     { char: "娩", meaning: "해산할 만" },
+    { char: "娩", meaning: "번식할 번" },
+    { char: "娩", meaning: "유순할 면" },
     { char: "嫚", meaning: "업신여길 만" },
+    { char: "嫚", meaning: "아름다울 원" },
     { char: "巒", meaning: "뫼 만" },
     { char: "巒", meaning: "메 란(난)" },
     { char: "幔", meaning: "막 만" },
@@ -3713,29 +3899,257 @@ const HANJA_DB = {
     { char: "漫", meaning: "질펀할 만" },
     { char: "灣", meaning: "물굽이 만" },
     { char: "瞞", meaning: "속일 만" },
+    { char: "瞞", meaning: "부끄러워할 문" },
     { char: "縵", meaning: "비단 만" },
     { char: "萬", meaning: "일만 만" },
     { char: "蔓", meaning: "덩굴 만" },
     { char: "蠻", meaning: "남방민족 만" },
     { char: "蹣", meaning: "비틀거릴 만" },
+    { char: "蹣", meaning: "비틀거릴 반" },
     { char: "鏋", meaning: "금 만" },
     { char: "鞔", meaning: "신울 만" },
+    { char: "鞔", meaning: "답답할 문" },
     { char: "饅", meaning: "만두 만" },
     { char: "鬘", meaning: "머리장식 만" },
     { char: "鰻", meaning: "뱀장어 만" },
+    { char: "㾺", meaning: "눈병 만" },
+    { char: "輓", meaning: "끌 만" },
+    { char: "輓", meaning: "애도할 만" },
+    { char: "万", meaning: "일만 만" },
+    { char: "謾", meaning: "속일 만" },
+    { char: "絻", meaning: "뱃줄 만" },
+    { char: "莬", meaning: "풀 이름 만" },
+    { char: "瞒", meaning: "속일 만" },
+    { char: "谩", meaning: "속일 만" },
+    { char: "毌", meaning: "구부릴 만" },
+    { char: "弯", meaning: "굽을 만" },
+    { char: "鏝", meaning: "흙손 만" },
+    { char: "㒼", meaning: "평평할 만" },
+    { char: "満", meaning: "찰 만" },
+    { char: "晩", meaning: "늦을 만" },
+    { char: "满", meaning: "찰 만" },
+    { char: "樠", meaning: "송진 만" },
+    { char: "湾", meaning: "물굽이 만" },
+    { char: "蛮", meaning: "종족 이름 만" },
+    { char: "脕", meaning: "흠치르르할 만" },
+    { char: "峦", meaning: "메 만" },
+    { char: "芇", meaning: "당할 만" },
+    { char: "懑", meaning: "번민할 만" },
+    { char: "馒", meaning: "만두 만" },
+    { char: "卐", meaning: "만자 만" },
+    { char: "㬅", meaning: "길게 끌 만" },
+    { char: "矕", meaning: "볼 만" },
+    { char: "杤", meaning: "지명 만" },
+    { char: "槾", meaning: "흙손 만" },
+    { char: "摱", meaning: "칠 만" },
+    { char: "澫", meaning: "질펀할 만" },
+    { char: "㸘", meaning: "일만 만" },
+    { char: "慲", meaning: "잊을 만" },
+    { char: "睌", meaning: "보는 모양 만" },
+    { char: "㦖", meaning: "번민할 만" },
+    { char: "鳗", meaning: "뱀장어 만" },
+    { char: "㵘", meaning: "큰물 만" },
+    { char: "熳", meaning: "빛날 만" },
+    { char: "㛯", meaning: "낳을 만" },
+    { char: "䟂", meaning: "느리게 걸을 만" },
+    { char: "䨲", meaning: "성씨 만" },
+    { char: "澷", meaning: "질펀할 만" },
+    { char: "顢", meaning: "얼굴 클 만" },
+    { char: "螨", meaning: "진드기 만" },
+    { char: "鋔", meaning: "당길 만" },
+    { char: "蟎", meaning: "진드기 만" },
+    { char: "獌", meaning: "스라소니 만" },
+    { char: "蔄", meaning: "성씨 만" },
+    { char: "梚", meaning: "나무 이름 만" },
+    { char: "笲", meaning: "폐백 상자 만" },
+    { char: "濷", meaning: "넘칠 만" },
+    { char: "贎", meaning: "재물 만" },
+    { char: "屘", meaning: "어린아이 만" },
+    { char: "㡢", meaning: "막 만" },
+    { char: "㝃", meaning: "아이 낳을 만" },
+    { char: "缦", meaning: "무늬 없는  만" },
+    { char: "潫", meaning: "빙 돌아 흐 만" },
+    { char: "䒥", meaning: "비길 만" },
+    { char: "鬗", meaning: "머리털 길 만" },
+    { char: "㗈", meaning: "속일 만" },
+    { char: "䝡", meaning: "스라소니 만" },
+    { char: "䐽", meaning: "눈 어두울 만" },
+    { char: "䕕", meaning: "풀 이름 만" },
+    { char: "蘰", meaning: "성씨 만" },
+    { char: "䯶", meaning: "다리꼭지 만" },
+    { char: "颟", meaning: "얼굴 클 만" },
+    { char: "㙢", meaning: "흙으로 덮을 만" },
+    { char: "镘", meaning: "흙손 만" },
+    { char: "䰋", meaning: "다리꼭지 만" },
+    { char: "塆", meaning: "조그만 평지 만" },
+    { char: "䜱", meaning: "정자 이름 만" },
+    { char: "㿸", meaning: "벗겨져 떨어 만" },
+    { char: "䡬", meaning: "수레 덮개 만" },
+    { char: "䅼", meaning: "벼 이름 만" },
+    { char: "䅋", meaning: "벼 이름 만" },
+    { char: "䊟", meaning: "엉길 만" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "말": [
     { char: "唜", meaning: "끌 말" },
+    { char: "唜", meaning: "끗 끗" },
     { char: "帕", meaning: "수건 파" },
+    { char: "帕", meaning: "머리띠 말" },
     { char: "抹", meaning: "바랄 말" },
     { char: "末", meaning: "끝 말" },
     { char: "沫", meaning: "거품 말" },
     { char: "秣", meaning: "꼴 말" },
     { char: "茉", meaning: "말리 말" },
     { char: "襪", meaning: "버선 말" },
+    { char: "靺", meaning: "말갈 말" },
+    { char: "靺", meaning: "버선 말" },
+    { char: "韎", meaning: "버선 말" },
+    { char: "袜", meaning: "버선 말" },
+    { char: "韈", meaning: "버선 말" },
+    { char: "昩", meaning: "어둑어둑할 말" },
+    { char: "袙", meaning: "머리띠 말" },
+    { char: "枺", meaning: "기둥 말" },
+    { char: "瀎", meaning: "닦아 없앨 말" },
+    { char: "妺", meaning: "여자의 자 말" },
+    { char: "帓", meaning: "수건 말" },
+    { char: "韤", meaning: "버선 말" },
+    { char: "眜", meaning: "무릅쓸 말" },
+    { char: "䴲", meaning: "밀가루 말" },
+    { char: "礣", meaning: "자갈 말" },
+    { char: "絈", meaning: "머리띠 말" },
+    { char: "㑻", meaning: "건장한 모양 말" },
+    { char: "粖", meaning: "죽 말" },
+    { char: "帞", meaning: "수질 말" },
+    { char: "䀣", meaning: "밉게 볼 말" },
+    { char: "怽", meaning: "미혹될 말" },
+    { char: "袹", meaning: "머리띠 말" },
+    { char: "閁", meaning: "흘겨볼 말" },
+    { char: "䬴", meaning: "꼴 말" },
+    { char: "皌", meaning: "옅은 흰색 말" },
+    { char: "䏞", meaning: "위 말" },
+    { char: "㨸", meaning: "칠 말" },
+    { char: "睰", meaning: "볼 말" },
+    { char: "砞", meaning: "부순 돌 말" },
+    { char: "㶬", meaning: "불빛 말" },
+    { char: "䯦", meaning: "잔뼈 말" },
+    { char: "䱅", meaning: "웅어 말" },
+    { char: "䍪", meaning: "오랑캐 양 말" },
+    { char: "魩", meaning: "물고기 꼬리 말" },
+    { char: "㭐", meaning: "음차자 말" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "망": [
     { char: "亡", meaning: "망할 망" },
+    { char: "亡", meaning: "없을 무" },
     { char: "兦", meaning: "없을 망" },
     { char: "妄", meaning: "허망할 망" },
     { char: "孟", meaning: "맹랑할 망" },
@@ -3747,13 +4161,148 @@ const HANJA_DB = {
     { char: "漭", meaning: "넓을 망" },
     { char: "網", meaning: "그물 망" },
     { char: "芒", meaning: "까끄라기 망" },
+    { char: "芒", meaning: "황홀할 황" },
     { char: "茫", meaning: "아득할 망" },
+    { char: "茫", meaning: "황홀할 황" },
     { char: "莽", meaning: "우거질 망" },
+    { char: "莽", meaning: "풀 무" },
+    { char: "莽", meaning: "풀 모" },
     { char: "莾", meaning: "대나무 망" },
     { char: "蟒", meaning: "이무기 망" },
+    { char: "蟒", meaning: "메뚜기 맹" },
     { char: "輞", meaning: "바퀴테 망" },
     { char: "邙", meaning: "산 이름 망" },
     { char: "魍", meaning: "도깨비 망" },
+    { char: "罔", meaning: "그물 망" },
+    { char: "罔", meaning: "없을 망" },
+    { char: "蘉", meaning: "힘쓸 망" },
+    { char: "网", meaning: "그물 망" },
+    { char: "茻", meaning: "우거질 망" },
+    { char: "狵", meaning: "삽살개 망" },
+    { char: "朢", meaning: "바랄 망" },
+    { char: "朢", meaning: "보름 망" },
+    { char: "琞", meaning: "보름 망" },
+    { char: "鋩", meaning: "서슬 망" },
+    { char: "亾", meaning: "망할 망" },
+    { char: "㠩", meaning: "까끄라기 망" },
+    { char: "吂", meaning: "노둔할 망" },
+    { char: "䍏", meaning: "그물 망" },
+    { char: "奀", meaning: "파리할 망" },
+    { char: "䑃", meaning: "풍성한 고기 망" },
+    { char: "朚", meaning: "급할 망" },
+    { char: "罒", meaning: "그물망 망" },
+    { char: "㓁", meaning: "그물망 망" },
+    { char: "恾", meaning: "두려워할 망" },
+    { char: "恾", meaning: "바쁠 망" },
+    { char: "罓", meaning: "그물망 망" },
+    { char: "䀮", meaning: "희미할 망" },
+    { char: "蠎", meaning: "이무기 망" },
+    { char: "㤀", meaning: "잊을 망" },
+    { char: "莣", meaning: "참억새 망" },
+    { char: "䰣", meaning: "도깨비 망" },
+    { char: "㒺", meaning: "그물 망" },
+    { char: "䏵", meaning: "살진 고기 망" },
+    { char: "誷", meaning: "속일 망" },
+    { char: "痝", meaning: "앓을 망" },
+    { char: "杧", meaning: "망고 망" },
+    { char: "笀", meaning: "까끄라기 망" },
+    { char: "䋄", meaning: "그물 망" },
+    { char: "杗", meaning: "들보 망" },
+    { char: "䋞", meaning: "그물 망" },
+    { char: "蝄", meaning: "도깨비 망" },
+    { char: "娏", meaning: "여신 망" },
+    { char: "釯", meaning: "서슬 망" },
+    { char: "硥", meaning: "돌 모양 망" },
+    { char: "蛖", meaning: "땅강아지 망" },
+    { char: "牤", meaning: "황소 망" },
+    { char: "䱩", meaning: "물고기 이름 망" },
+    { char: "㟌", meaning: "산 이름 망" },
+    { char: "䥈", meaning: "다리미 망" },
+    { char: "硭", meaning: "망초 망" },
+    { char: "蛧", meaning: "도깨비 망" },
+    { char: "䵨", meaning: "사사로이 망" },
+    { char: "铓", meaning: "서슬 망" },
+    { char: "菵", meaning: "망초 망" },
+    { char: "焹", meaning: "불꽃 망" },
+    { char: "䁳", meaning: "애꾸눈 망" },
+    { char: "㤶", meaning: "흐릿할 망" },
+    { char: "䓼", meaning: "풀 망" },
+    { char: "浝", meaning: "강 이름 망" },
+    { char: "䰶", meaning: "망어 망" },
+    { char: "㬒", meaning: "날 흐릴 망" },
+    { char: "䅒", meaning: "까끄라기 망" },
+    { char: "䒎", meaning: "무색 모양 망" },
+    { char: "辋", meaning: "바퀴 테 망" },
+    { char: "壾", meaning: "사람 이름 망" },
+    { char: "䒽", meaning: "망초 망" },
+    { char: "㟿", meaning: "산 모양 망" },
+    { char: "棢", meaning: "바퀴 테 망" },
+    { char: "㟐", meaning: "산 모양 망" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "매": [
     { char: "勱", meaning: "힘쓸 매" },
@@ -3765,14 +4314,18 @@ const HANJA_DB = {
     { char: "媒", meaning: "중매 매" },
     { char: "寐", meaning: "잠잘 매" },
     { char: "昧", meaning: "새벽 매" },
+    { char: "昧", meaning: "가를 문" },
+    { char: "昧", meaning: "사람 이름 말" },
     { char: "枚", meaning: "줄기 매" },
     { char: "梅", meaning: "매화나무 매" },
     { char: "每", meaning: "매양 매" },
     { char: "沬", meaning: "지명 매" },
+    { char: "沬", meaning: "씻을 회" },
     { char: "煤", meaning: "그을음 매" },
     { char: "玫", meaning: "매괴 매" },
     { char: "眛", meaning: "어두울 매" },
     { char: "罵", meaning: "욕할 매" },
+    { char: "罵", meaning: "꾸짖을 마" },
     { char: "苺", meaning: "딸기 매" },
     { char: "莓", meaning: "나무딸기 매" },
     { char: "買", meaning: "살 매" },
@@ -3780,8 +4333,128 @@ const HANJA_DB = {
     { char: "邁", meaning: "갈 매" },
     { char: "酶", meaning: "술밑 매" },
     { char: "霉", meaning: "매우 매" },
+    { char: "霉", meaning: "곰팡이 미" },
     { char: "霾", meaning: "흙비 올 매" },
     { char: "魅", meaning: "도깨비 매" },
+    { char: "魅", meaning: "도깨비 미" },
+    { char: "塺", meaning: "티끌 매" },
+    { char: "韎", meaning: "가죽 매" },
+    { char: "浼", meaning: "더럽힐 매" },
+    { char: "脢", meaning: "등심 매" },
+    { char: "痗", meaning: "앓을 매" },
+    { char: "鋂", meaning: "쇠사슬 고리 매" },
+    { char: "駡", meaning: "꾸짖을 매" },
+    { char: "骂", meaning: "꾸짖을 매" },
+    { char: "売", meaning: "팔 매" },
+    { char: "毎", meaning: "매양 매" },
+    { char: "买", meaning: "살 매" },
+    { char: "卖", meaning: "팔 매" },
+    { char: "坆", meaning: "매화 매" },
+    { char: "薶", meaning: "묻을 매" },
+    { char: "迈", meaning: "멀리 갈 매" },
+    { char: "䀛", meaning: "멀리 볼 매" },
+    { char: "䀛", meaning: "새벽 매" },
+    { char: "抺", meaning: "더듬을 매" },
+    { char: "楳", meaning: "매화나무 매" },
+    { char: "栂", meaning: "매화나무 매" },
+    { char: "鬽", meaning: "도깨비 매" },
+    { char: "佅", meaning: "어두울 매" },
+    { char: "槑", meaning: "매화 매" },
+    { char: "禖", meaning: "매제 매" },
+    { char: "祙", meaning: "도깨비 매" },
+    { char: "浘", meaning: "샘밑 매" },
+    { char: "蕒", meaning: "시화 매" },
+    { char: "䰨", meaning: "도깨비 매" },
+    { char: "湈", meaning: "깨뜨릴 매" },
+    { char: "挴", meaning: "탐할 매" },
+    { char: "㙁", meaning: "티끌 매" },
+    { char: "凂", meaning: "더럽힐 매" },
+    { char: "脄", meaning: "등심 매" },
+    { char: "腜", meaning: "아이 밸 매" },
+    { char: "䤂", meaning: "식초 매" },
+    { char: "劢", meaning: "힘쓸 매" },
+    { char: "䨪", meaning: "흙비 매" },
+    { char: "䰪", meaning: "도깨비 매" },
+    { char: "㦟", meaning: "영리할 매" },
+    { char: "䍙", meaning: "꿩그물 매" },
+    { char: "跊", meaning: "밟을 매" },
+    { char: "䀜", meaning: "멀리 볼 매" },
+    { char: "䜕", meaning: "허풍 칠 매" },
+    { char: "㐷", meaning: "꾸짖을 매" },
+    { char: "㵋", meaning: "물 이름 매" },
+    { char: "黣", meaning: "그을 매" },
+    { char: "鷶", meaning: "접동새 매" },
+    { char: "㺳", meaning: "붉은 옥 매" },
+    { char: "荬", meaning: "시화 매" },
+    { char: "珻", meaning: "옥 이름 매" },
+    { char: "䊈", meaning: "누룩 매" },
+    { char: "嘪", meaning: "양 울음소리 매" },
+    { char: "䵢", meaning: "거무스름할 매" },
+    { char: "䆀", meaning: "검은 반점 매" },
+    { char: "䜸", meaning: "콩깍지 매" },
+    { char: "㜥", meaning: "약을 매" },
+    { char: "䁲", meaning: "흘긋 볼 매" },
+    { char: "䚑", meaning: "흘긋 볼 매" },
+    { char: "㭑", meaning: "나무 이름 매" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "맥": [
     { char: "百", meaning: "힘쓸 맥" },
@@ -3792,6 +4465,56 @@ const HANJA_DB = {
     { char: "陌", meaning: "두렁 맥" },
     { char: "驀", meaning: "말탈 맥" },
     { char: "麥", meaning: "보리 맥" },
+    { char: "貉", meaning: "오랑캐 맥" },
+    { char: "袙", meaning: "속옷 맥" },
+    { char: "絈", meaning: "두건 맥" },
+    { char: "帞", meaning: "두건 맥" },
+    { char: "袹", meaning: "속옷 맥" },
+    { char: "霢", meaning: "가랑비 맥" },
+    { char: "麦", meaning: "보리 맥" },
+    { char: "脉", meaning: "혈맥 맥" },
+    { char: "眽", meaning: "훔쳐볼 맥" },
+    { char: "蓦", meaning: "말 탈 맥" },
+    { char: "獏", meaning: "맹수 이름 맥" },
+    { char: "覛", meaning: "몰래 볼 맥" },
+    { char: "覭", meaning: "더부룩이 날 맥" },
+    { char: "衇", meaning: "혈맥 맥" },
+    { char: "霡", meaning: "가랑비 맥" },
+    { char: "㹮", meaning: "맹수 맥" },
+    { char: "絔", meaning: "두건 맥" },
+    { char: "䨫", meaning: "가랑비 맥" },
+    { char: "䘑", meaning: "혈맥 맥" },
+    { char: "銆", meaning: "병기 이름 맥" },
+    { char: "眿", meaning: "훔쳐볼 맥" },
+    { char: "㵹", meaning: "빽빽한 모양 맥" },
+    { char: "䮮", meaning: "노새 맥" },
+    { char: "蛨", meaning: "벌레 이름 맥" },
+    { char: "䳮", meaning: "놀라서 보는 맥" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "맹": [
     { char: "孟", meaning: "맏 맹" },
@@ -3799,10 +4522,76 @@ const HANJA_DB = {
     { char: "猛", meaning: "사나울 맹" },
     { char: "盟", meaning: "맹세할 맹" },
     { char: "盲", meaning: "소경 맹" },
+    { char: "盲", meaning: "바라볼 망" },
     { char: "萌", meaning: "싹 맹" },
+    { char: "萌", meaning: "활량나물 명" },
+    { char: "萌", meaning: "있을 몽" },
     { char: "儚", meaning: "어두울 맹" },
+    { char: "儚", meaning: "어두울 몽" },
     { char: "甍", meaning: "용마루 맹" },
     { char: "虻", meaning: "등에 맹" },
+    { char: "懜", meaning: "밝지 못할 맹" },
+    { char: "黾", meaning: "맹꽁이 맹" },
+    { char: "懵", meaning: "어두울 맹" },
+    { char: "瞢", meaning: "먼눈 맹" },
+    { char: "蝱", meaning: "등에 맹" },
+    { char: "甿", meaning: "백성 맹" },
+    { char: "掹", meaning: "끌 맹" },
+    { char: "萠", meaning: "움 맹" },
+    { char: "莔", meaning: "패모 맹" },
+    { char: "勐", meaning: "사나울 맹" },
+    { char: "艋", meaning: "작은 배 맹" },
+    { char: "鼆", meaning: "밤 맹" },
+    { char: "鄳", meaning: "땅 이름 맹" },
+    { char: "盳", meaning: "맹인 맹" },
+    { char: "䇇", meaning: "백성 맹" },
+    { char: "蜢", meaning: "메뚜기 맹" },
+    { char: "锰", meaning: "망간 맹" },
+    { char: "錳", meaning: "망간 맹" },
+    { char: "擝", meaning: "당길 맹" },
+    { char: "䖟", meaning: "등에 맹" },
+    { char: "蕄", meaning: "움 맹" },
+    { char: "䓝", meaning: "강아지풀 맹" },
+    { char: "䒐", meaning: "어지러울 맹" },
+    { char: "䁅", meaning: "볼 맹" },
+    { char: "橗", meaning: "고갱이 맹" },
+    { char: "瓾", meaning: "시루 테 맹" },
+    { char: "䉚", meaning: "대나무 맹" },
+    { char: "䥰", meaning: "표창 맹" },
+    { char: "䗈", meaning: "등에 맹" },
+    { char: "鯭", meaning: "두꺼비 맹" },
+    { char: "䈍", meaning: "대나무 이름 맹" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "먀": [
     { char: "乜", meaning: "사팔 뜨기 먀" },
@@ -3810,11 +4599,67 @@ const HANJA_DB = {
   "며": [
     { char: "旀", meaning: "하며 며" },
     { char: "厼", meaning: "구결자 며" },
+    { char: "㢱", meaning: "구결자 며" }
+  ,
   ],
   "멱": [
     { char: "冪", meaning: "덮을 멱" },
     { char: "汨", meaning: "물이름 멱" },
     { char: "覓", meaning: "찾을 멱" },
+    { char: "㵋", meaning: "물 이름 멱" },
+    { char: "眽", meaning: "곁눈 멱" },
+    { char: "覛", meaning: "몰래 볼 멱" },
+    { char: "溟", meaning: "가랑비 오는 멱" },
+    { char: "幭", meaning: "덮개 멱" },
+    { char: "羃", meaning: "덮을 멱" },
+    { char: "纟", meaning: "가는 실 멱" },
+    { char: "糹", meaning: "가는 실 멱" },
+    { char: "冖", meaning: "덮을 멱" },
+    { char: "覔", meaning: "찾을 멱" },
+    { char: "幎", meaning: "덮을 멱" },
+    { char: "幂", meaning: "덮을 멱" },
+    { char: "鼏", meaning: "소댕 멱" },
+    { char: "觅", meaning: "찾을 멱" },
+    { char: "熐", meaning: "흉노 마을  멱" },
+    { char: "淿", meaning: "물 이름 멱" },
+    { char: "漞", meaning: "물 이름 멱" },
+    { char: "幦", meaning: "덮개 멱" },
+    { char: "䣾", meaning: "타락 찌꺼기 멱" },
+    { char: "䌐", meaning: "밧줄 멱" },
+    { char: "塓", meaning: "맥질할 멱" },
+    { char: "簚", meaning: "수레 덮개 멱" },
+    { char: "㨠", meaning: "맥질할 멱" },
+    { char: "濗", meaning: "물 얕을 멱" },
+    { char: "䖑", meaning: "백호 멱" },
+    { char: "䮭", meaning: "놀라서 볼 멱" },
+    { char: "䈿", meaning: "수레 덮개  멱" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "면": [
     { char: "丏", meaning: "가릴 면" },
@@ -3828,23 +4673,184 @@ const HANJA_DB = {
     { char: "湎", meaning: "빠질 면" },
     { char: "眄", meaning: "애꾸눈 면" },
     { char: "眠", meaning: "잠잘 면" },
+    { char: "眠", meaning: "볼 민" },
     { char: "瞑", meaning: "눈 감을 면" },
     { char: "綿", meaning: "이어질 면" },
     { char: "緜", meaning: "햇솜 면" },
     { char: "緬", meaning: "가는 실 면" },
     { char: "面", meaning: "낯 면" },
     { char: "麵", meaning: "밀가루 면" },
+    { char: "謾", meaning: "속일 면" },
+    { char: "絻", meaning: "면류관 면" },
+    { char: "莬", meaning: "사람 이름 면" },
+    { char: "芇", meaning: "당할 면" },
+    { char: "㝃", meaning: "아이 낳을 면" },
+    { char: "䯶", meaning: "눈썹 그릴 면" },
+    { char: "浼", meaning: "펀히 흐를 면" },
+    { char: "冥", meaning: "어두울 면" },
+    { char: "俛", meaning: "힘쓸 면" },
+    { char: "麪", meaning: "밀가루 면" },
+    { char: "澠", meaning: "고을 이름 면" },
+    { char: "湣", meaning: "어두울 면" },
+    { char: "牑", meaning: "대삿자리 면" },
+    { char: "臱", meaning: "보이지 않을 면" },
+    { char: "麺", meaning: "밀가루 면" },
+    { char: "宀", meaning: "집 면" },
+    { char: "绵", meaning: "솜 면" },
+    { char: "蠠", meaning: "말매미 면" },
+    { char: "靣", meaning: "낯 면" },
+    { char: "丆", meaning: "구결자 면" },
+    { char: "缅", meaning: "멀 면" },
+    { char: "糆", meaning: "밀가루 면" },
+    { char: "麫", meaning: "밀가루 면" },
+    { char: "鮸", meaning: "민어 면" },
+    { char: "腼", meaning: "낯가릴 면" },
+    { char: "㨺", meaning: "꾸밀 면" },
+    { char: "㴐", meaning: "물 넘칠 면" },
+    { char: "汅", meaning: "내 이름 면" },
+    { char: "䀎", meaning: "곁눈질할 면" },
+    { char: "愐", meaning: "부끄러워할 면" },
+    { char: "櫋", meaning: "차양 면" },
+    { char: "䛲", meaning: "속일 면" },
+    { char: "㡈", meaning: "면류관 면" },
+    { char: "葂", meaning: "사람 이름 면" },
+    { char: "蝒", meaning: "매미 면" },
+    { char: "䫵", meaning: "쌍둥이 면" },
+    { char: "䏃", meaning: "들을 면" },
+    { char: "䰓", meaning: "눈썹먹 면" },
+    { char: "婂", meaning: "여자의 자 면" },
+    { char: "媔", meaning: "눈매 예쁠 면" },
+    { char: "矏", meaning: "빽빽할 면" },
+    { char: "矈", meaning: "볼 면" },
+    { char: "㝰", meaning: "보이지 않을 면" },
+    { char: "檰", meaning: "두충 면" },
+    { char: "喕", meaning: "말하지 않을 면" },
+    { char: "䤄", meaning: "술에 빠질 면" },
+    { char: "䃇", meaning: "면사 면" },
+    { char: "㮌", meaning: "목화 면" },
+    { char: "嬵", meaning: "여자의 자 면" },
+    { char: "㰃", meaning: "대삿자리 면" },
+    { char: "矊", meaning: "검은 눈동자 면" },
+    { char: "䛉", meaning: "꾀는 말 면" },
+    { char: "㒙", meaning: "낮은 모양 면" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "멸": [
     { char: "滅", meaning: "멸망할 멸" },
     { char: "篾", meaning: "대 껍질 멸" },
     { char: "蔑", meaning: "업신여길 멸" },
     { char: "衊", meaning: "모독할 멸" },
+    { char: "瀎", meaning: "빨리 흐를 멸" },
+    { char: "眜", meaning: "땅 이름 멸" },
+    { char: "礣", meaning: "단단한 돌 멸" },
+    { char: "幭", meaning: "덮개 멸" },
+    { char: "烕", meaning: "꺼질 멸" },
+    { char: "灭", meaning: "다할 멸" },
+    { char: "搣", meaning: "비빌 멸" },
+    { char: "覕", meaning: "가릴 멸" },
+    { char: "薎", meaning: "눈에놀이 멸" },
+    { char: "薎", meaning: "업신여길 멸" },
+    { char: "櫗", meaning: "나무 끈 멸" },
+    { char: "蠛", meaning: "눈에놀이 멸" },
+    { char: "懱", meaning: "업신여길 멸" },
+    { char: "䁾", meaning: "진무를 멸" },
+    { char: "揻", meaning: "비빌 멸" },
+    { char: "㩢", meaning: "방정하지 못 멸" },
+    { char: "㓕", meaning: "다할 멸" },
+    { char: "孭", meaning: "업을 멸" },
+    { char: "鴓", meaning: "동박새 멸" },
+    { char: "鱴", meaning: "웅어 멸" },
+    { char: "䈼", meaning: "대껍질 멸" },
+    { char: "䌩", meaning: "가늘 멸" },
+    { char: "㒝", meaning: "간사할 멸" },
+    { char: "䘊", meaning: "눈에놀이 멸" },
+    { char: "䩏", meaning: "얼굴 작을 멸" },
+    { char: "鑖", meaning: "쇳덩이 멸" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "명": [
     { char: "名", meaning: "이름 명" },
     { char: "命", meaning: "목숨 명" },
+    { char: "命", meaning: "게으름 피울 만" },
     { char: "明", meaning: "밝을 명" },
+    { char: "明", meaning: "땅 이름 맹" },
     { char: "暝", meaning: "어두울 명" },
     { char: "椧", meaning: "홈 통 명" },
     { char: "洺", meaning: "강 이름 명" },
@@ -3852,41 +4858,120 @@ const HANJA_DB = {
     { char: "瞑", meaning: "눈 감을 명" },
     { char: "茗", meaning: "차 싹 명" },
     { char: "蓂", meaning: "명협 명" },
+    { char: "蓂", meaning: "냉이 멱" },
     { char: "螟", meaning: "마디충 명" },
     { char: "酩", meaning: "술 취할 명" },
     { char: "銘", meaning: "새길 명" },
     { char: "鳴", meaning: "울 명" },
+    { char: "覭", meaning: "볼 명" },
+    { char: "溟", meaning: "어두울 명" },
+    { char: "熐", meaning: "흉노 마을  명" },
+    { char: "冥", meaning: "어두울 명" },
+    { char: "䏃", meaning: "아뢸 명" },
+    { char: "凕", meaning: "쌀쌀할 명" },
+    { char: "㝠", meaning: "어두울 명" },
+    { char: "鸣", meaning: "울 명" },
+    { char: "朙", meaning: "밝을 명" },
+    { char: "眀", meaning: "밝을 명" },
+    { char: "铭", meaning: "새길 명" },
+    { char: "嫇", meaning: "조심조심할 명" },
+    { char: "慏", meaning: "마음 다함없 명" },
+    { char: "眳", meaning: "눈두덩 명" },
+    { char: "詺", meaning: "이름 붙일 명" },
+    { char: "榠", meaning: "명자나무 명" },
+    { char: "姳", meaning: "좋을 명" },
+    { char: "㫥", meaning: "어두울 명" },
+    { char: "䆩", meaning: "어두울 명" },
+    { char: "䳟", meaning: "초명새 명" },
+    { char: "焽", meaning: "불빛 명" },
+    { char: "佲", meaning: "술 많이 취 명" },
+    { char: "鄍", meaning: "고을 이름 명" },
+    { char: "䄙", meaning: "복 명" },
+    { char: "䒌", meaning: "검푸른빛 명" },
+    { char: "掵", meaning: "지명 명" },
+    { char: "峔", meaning: "산 이름 명" },
+    { char: "㟰", meaning: "산 높은 모 명" },
+    { char: "䫤", meaning: "눈썹과 눈  명" },
+    { char: "㗮", meaning: "음차자 명" },
+    { char: "猽", meaning: "작은 돼지 명" },
+    { char: "䊅", meaning: "담근 쌀 명" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "몌": [
     { char: "袂", meaning: "소매 몌" },
+    { char: "櫗", meaning: "가늘고 작은 몌" },
+    { char: "㩢", meaning: "닦을 몌" }
+  
+  ,
   ],
   "모": [
     { char: "侔", meaning: "가지런 할 모" },
     { char: "侮", meaning: "업신여길 모" },
     { char: "冃", meaning: "머리건 모" },
+    { char: "冃", meaning: "덮을 무" },
     { char: "冐", meaning: "무릅쓸 모" },
     { char: "冒", meaning: "가릴 모" },
     { char: "募", meaning: "모을 모" },
     { char: "姆", meaning: "여스승 모" },
+    { char: "姆", meaning: "유모 무" },
     { char: "姥", meaning: "할미 모" },
     { char: "姥", meaning: "외조모 로(노)" },
     { char: "媢", meaning: "강새암 할 모" },
     { char: "嫫", meaning: "예쁠 모" },
     { char: "帽", meaning: "모자 모" },
     { char: "恈", meaning: "탐할 모" },
+    { char: "恈", meaning: "탐할 무" },
     { char: "慕", meaning: "그리워할 모" },
     { char: "摸", meaning: "찾을 모" },
+    { char: "摸", meaning: "더듬을 막" },
     { char: "摹", meaning: "베낄 모" },
     { char: "旄", meaning: "깃대 장식 모" },
     { char: "暮", meaning: "저물 모" },
     { char: "木", meaning: "새길 모" },
     { char: "某", meaning: "아무 모" },
+    { char: "某", meaning: "매화 매" },
     { char: "模", meaning: "법 모" },
     { char: "母", meaning: "어미 모" },
+    { char: "母", meaning: "없을 무" },
     { char: "毛", meaning: "털 모" },
+    { char: "毛", meaning: "없을 무" },
     { char: "牟", meaning: "소울음 모" },
+    { char: "牟", meaning: "어두울 무" },
     { char: "牡", meaning: "수컷 모" },
+    { char: "牡", meaning: "수컷 무" },
     { char: "瑁", meaning: "서옥 모" },
+    { char: "瑁", meaning: "대모 매" },
     { char: "皃", meaning: "모양 모" },
     { char: "眊", meaning: "눈 흐릴 모" },
     { char: "眸", meaning: "눈동자 모" },
@@ -3896,18 +4981,180 @@ const HANJA_DB = {
     { char: "耄", meaning: "늙은이 모" },
     { char: "耗", meaning: "줄 모" },
     { char: "膜", meaning: "무릎 꿇을 모" },
+    { char: "膜", meaning: "꺼풀 막" },
     { char: "芼", meaning: "풀 우거질 모" },
     { char: "茅", meaning: "띠 모" },
     { char: "蝥", meaning: "해충 모" },
+    { char: "蝥", meaning: "가뢰 무" },
     { char: "謀", meaning: "꾀할 모" },
     { char: "謨", meaning: "꾀 모" },
     { char: "貌", meaning: "얼굴 모" },
     { char: "鉾", meaning: "칼 끝 모" },
     { char: "髦", meaning: "다팔머리 모" },
+    { char: "髦", meaning: "오랑캐 무" },
     { char: "麰", meaning: "보리 모" },
+    { char: "瞀", meaning: "현기증 모" },
+    { char: "幙", meaning: "본뜰 모" },
+    { char: "縸", meaning: "헌솜 모" },
+    { char: "茻", meaning: "다년초 모" },
+    { char: "栂", meaning: "소나무 모" },
+    { char: "䍙", meaning: "꿩그물 모" },
+    { char: "獏", meaning: "짐승 이름 모" },
+    { char: "峔", meaning: "산 이름 모" },
+    { char: "撫", meaning: "본뜰 모" },
+    { char: "茆", meaning: "띠 모" },
+    { char: "蟊", meaning: "해충 모" },
+    { char: "氂", meaning: "꼬리 모" },
+    { char: "厶", meaning: "아무 모" },
+    { char: "犛", meaning: "검은 소 모" },
+    { char: "橅", meaning: "법 모" },
+    { char: "谋", meaning: "꾀 모" },
+    { char: "㹸", meaning: "모양 모" },
+    { char: "㖼", meaning: "꾀할 모" },
+    { char: "䫉", meaning: "모양 모" },
+    { char: "鷚", meaning: "종달새 모" },
+    { char: "㒻", meaning: "닿을 모" },
+    { char: "蛑", meaning: "꽃게 모" },
+    { char: "蓩", meaning: "취어초 모" },
+    { char: "牦", meaning: "소 모" },
+    { char: "㚢", meaning: "업신여길 모" },
+    { char: "㡌", meaning: "모자 모" },
+    { char: "慔", meaning: "힘쓸 모" },
+    { char: "枆", meaning: "복숭아 모" },
+    { char: "瞴", meaning: "아름다울 모" },
+    { char: "秏", meaning: "벼 모" },
+    { char: "毣", meaning: "눈 흐릴 모" },
+    { char: "谟", meaning: "꾀 모" },
+    { char: "玥", meaning: "옥홀 모" },
+    { char: "毟", meaning: "물어뜯을 모" },
+    { char: "媌", meaning: "눈매 고울 모" },
+    { char: "譕", meaning: "꾀 모" },
+    { char: "覒", meaning: "가릴 모" },
+    { char: "謩", meaning: "꾀 모" },
+    { char: "㹈", meaning: "나라 이름 모" },
+    { char: "桙", meaning: "칼끝 모" },
+    { char: "娒", meaning: "유모 모" },
+    { char: "娒", meaning: "업신여길 모" },
+    { char: "㒵", meaning: "모양 모" },
+    { char: "㧌", meaning: "가릴 모" },
+    { char: "鴾", meaning: "세가락메추라 모" },
+    { char: "㝟", meaning: "무릅쓸 모" },
+    { char: "鉧", meaning: "다리미 모" },
+    { char: "洠", meaning: "물가 언덕 모" },
+    { char: "㺺", meaning: "서옥 모" },
+    { char: "酕", meaning: "매우 취할 모" },
+    { char: "㪞", meaning: "부딪칠 모" },
+    { char: "䗋", meaning: "꽃게 모" },
+    { char: "哞", meaning: "소 우는 소 모" },
+    { char: "艒", meaning: "거룻배 모" },
+    { char: "蝐", meaning: "대모 모" },
+    { char: "毮", meaning: "물어뜯을 모" },
+    { char: "罞", meaning: "고라니 그물 모" },
+    { char: "䭷", meaning: "말총 길 모" },
+    { char: "毷", meaning: "번민할 모" },
+    { char: "㘪", meaning: "소모할 모" },
+    { char: "㲝", meaning: "함치르르할 모" },
+    { char: "㿞", meaning: "늙은이 모" },
+    { char: "㑄", meaning: "업신여길 모" },
+    { char: "㧇", meaning: "가질 모" },
+    { char: "軞", meaning: "병거 모" },
+    { char: "毪", meaning: "양털 모" },
+    { char: "氁", meaning: "무늬 넣은  모" },
+    { char: "䖥", meaning: "해충 모" },
+    { char: "㴘", meaning: "물 넘칠 모" },
+    { char: "鶜", meaning: "수리부엉이 모" },
+    { char: "䋃", meaning: "비단 모" },
+    { char: "竓", meaning: "밀리리터 모" },
+    { char: "瓱", meaning: "밀리그램 모" },
+    { char: "兞", meaning: "밀리그램 모" },
+    { char: "䓮", meaning: "잔풀 더부룩 모" },
+    { char: "砪", meaning: "돌비늘 모" },
+    { char: "魹", meaning: "지명 모" },
+    { char: "䡚", meaning: "수레 끌 모" },
+    { char: "㟂", meaning: "산 이름 모" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "목": [
     { char: "冒", meaning: "무릅쓸 목" },
+    { char: "冒", meaning: "선우 이름 묵" },
     { char: "凩", meaning: "찬바람 목" },
     { char: "匹", meaning: "집 오리 목" },
     { char: "木", meaning: "나무 목" },
@@ -3917,11 +5164,85 @@ const HANJA_DB = {
     { char: "睦", meaning: "화목할 목" },
     { char: "苜", meaning: "거여목 목" },
     { char: "鶩", meaning: "집오리 목" },
+    { char: "鶩", meaning: "집오리 무" },
+    { char: "瞀", meaning: "야맹증 목" },
+    { char: "㙁", meaning: "땅 이름 목" },
+    { char: "蓩", meaning: "취어초 목" },
+    { char: "毣", meaning: "생각할 목" },
+    { char: "艒", meaning: "거룻배 목" },
+    { char: "穆", meaning: "화목할 목" },
+    { char: "楘", meaning: "나릇 장식 목" },
+    { char: "霂", meaning: "가랑비 목" },
+    { char: "㣎", meaning: "잔무늬 목" },
+    { char: "炑", meaning: "불 활활 붙 목" },
+    { char: "朷", meaning: "뽕 가지칠 목" },
+    { char: "㜈", meaning: "예쁠 목" },
+    { char: "樢", meaning: "새 이름 목" },
+    { char: "杢", meaning: "목수 목" },
+    { char: "鹜", meaning: "집오리 목" },
+    { char: "䳱", meaning: "집오리 목" },
+    { char: "萺", meaning: "채소 이름 목" },
+    { char: "坶", meaning: "땅 이름 목" },
+    { char: "鉬", meaning: "몰리브덴 목" },
+    { char: "雮", meaning: "윤기 흐르는 목" },
+    { char: "狇", meaning: "이민족 이름 목" },
+    { char: "钼", meaning: "몰리브덴 목" },
+    { char: "莯", meaning: "풀 이름 목" },
+    { char: "鞪", meaning: "끌채를 동인 목" },
+    { char: "蚞", meaning: "매미 목" },
+    { char: "㾇", meaning: "병 목" },
+    { char: "䊾", meaning: "끈 목" },
+    { char: "䀲", meaning: "눈병 목" },
+    { char: "䑵", meaning: "거룻배 목" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "몰": [
     { char: "勿", meaning: "없을 몰" },
     { char: "歿", meaning: "돌아갈 몰" },
+    { char: "歿", meaning: "자를 문" },
     { char: "沒", meaning: "가라 앉을 몰" },
+    { char: "沒", meaning: "어두울 매" },
+    { char: "沒", meaning: "어찌 마" },
+    { char: "圽", meaning: "죽을 몰" },
+    { char: "没", meaning: "빠질 몰" },
+    { char: "歾", meaning: "죽을 몰" },
+    { char: "殁", meaning: "죽을 몰" },
+    { char: "朰", meaning: "음차자 몰" },
+    { char: "莈", meaning: "풀 이름 몰" }
+  
+  
+  
+  
+  
+  ,
   ],
   "몽": [
     { char: "冡", meaning: "덮어쓸 몽" },
@@ -3935,7 +5256,110 @@ const HANJA_DB = {
     { char: "艨", meaning: "싸움배 몽" },
     { char: "蒙", meaning: "입을 몽" },
     { char: "雺", meaning: "안개 몽" },
+    { char: "雺", meaning: "안개 무" },
     { char: "鸏", meaning: "비둘기 몽" },
+    { char: "䑃", meaning: "풍성할 몽" },
+    { char: "䏵", meaning: "풍만할 몽" },
+    { char: "懜", meaning: "어리석을 몽" },
+    { char: "懵", meaning: "어리석을 몽" },
+    { char: "瞢", meaning: "어두울 몽" },
+    { char: "䒐", meaning: "심란할 몽" },
+    { char: "蟊", meaning: "점괘 몽" },
+    { char: "罞", meaning: "고라니 그물 몽" },
+    { char: "髳", meaning: "무성할 몽" },
+    { char: "饛", meaning: "그릇에 가득 몽" },
+    { char: "庬", meaning: "나누어지지  몽" },
+    { char: "霿", meaning: "안개 자욱할 몽" },
+    { char: "梦", meaning: "꿈 몽" },
+    { char: "檬", meaning: "레몬 몽" },
+    { char: "䝉", meaning: "입을 몽" },
+    { char: "懞", meaning: "어두울 몽" },
+    { char: "㒱", meaning: "꿈 몽" },
+    { char: "蠓", meaning: "눈에놀이 몽" },
+    { char: "鏓", meaning: "뚫을 몽" },
+    { char: "㝱", meaning: "꿈 몽" },
+    { char: "矒", meaning: "어두울 몽" },
+    { char: "夣", meaning: "꿈 몽" },
+    { char: "靀", meaning: "보슬비 몽" },
+    { char: "礞", meaning: "청몽석 몽" },
+    { char: "㙙", meaning: "바를 몽" },
+    { char: "甮", meaning: "말 몽" },
+    { char: "䑅", meaning: "어두울 몽" },
+    { char: "䲛", meaning: "참다랑어 몽" },
+    { char: "鯍", meaning: "참다랑어 몽" },
+    { char: "氋", meaning: "털 흩어질 몽" },
+    { char: "䠢", meaning: "터덜터덜 가 몽" },
+    { char: "䤓", meaning: "누룩 뜰 몽" },
+    { char: "䀄", meaning: "그릇에 가득 몽" },
+    { char: "㴳", meaning: "어리석을 몽" },
+    { char: "霥", meaning: "우렛소리 몽" },
+    { char: "䁫", meaning: "어두울 몽" },
+    { char: "㜴", meaning: "어두울 몽" },
+    { char: "顭", meaning: "어두울 몽" },
+    { char: "獴", meaning: "짐승 이름 몽" },
+    { char: "䰒", meaning: "늘어진 말갈 몽" },
+    { char: "鄸", meaning: "땅 이름 몽" },
+    { char: "䥂", meaning: "보습 몽" },
+    { char: "㩚", meaning: "거둘 몽" },
+    { char: "䴿", meaning: "누룩 몽" },
+    { char: "㙹", meaning: "못 몽" },
+    { char: "鹲", meaning: "물새 이름 몽" },
+    { char: "㠓", meaning: "산 이름 몽" },
+    { char: "䙦", meaning: "배자 몽" },
+    { char: "䴌", meaning: "물새 이름 몽" },
+    { char: "䵆", meaning: "누룩 몽" },
+    { char: "䙩", meaning: "어린애 옷 몽" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "묘": [
     { char: "卯", meaning: "토끼 묘" },
@@ -3946,6 +5370,7 @@ const HANJA_DB = {
     { char: "描", meaning: "그릴 묘" },
     { char: "昴", meaning: "별자리 이름 묘" },
     { char: "杳", meaning: "어두울 묘" },
+    { char: "杳", meaning: "아득할 요" },
     { char: "淼", meaning: "물 아득할 묘" },
     { char: "渺", meaning: "아득할 묘" },
     { char: "猫", meaning: "고양이 묘" },
@@ -3954,15 +5379,104 @@ const HANJA_DB = {
     { char: "竗", meaning: "땅 이름 묘" },
     { char: "苗", meaning: "모 묘" },
     { char: "藐", meaning: "작을 묘" },
+    { char: "藐", meaning: "아득할 막" },
+    { char: "藐", meaning: "치자 모" },
     { char: "錨", meaning: "닻 묘" },
+    { char: "茆", meaning: "순채 묘" },
+    { char: "媌", meaning: "눈매 고울 묘" },
+    { char: "貓", meaning: "고양이 묘" },
+    { char: "㚹", meaning: "예쁠 묘" },
+    { char: "夘", meaning: "넷째 지지 묘" },
+    { char: "緲", meaning: "아득할 묘" },
+    { char: "庙", meaning: "사당 묘" },
+    { char: "玅", meaning: "묘할 묘" },
+    { char: "訬", meaning: "가냘플 묘" },
+    { char: "亩", meaning: "이랑 묘" },
+    { char: "畒", meaning: "이랑 묘" },
+    { char: "鉚", meaning: "땜질할 묘" },
+    { char: "喵", meaning: "고양이 우는 묘" },
+    { char: "泖", meaning: "호수 이름 묘" },
+    { char: "畞", meaning: "이랑 묘" },
+    { char: "畆", meaning: "이랑 묘" },
+    { char: "庿", meaning: "사당 묘" },
+    { char: "㽗", meaning: "이랑 묘" },
+    { char: "戼", meaning: "넷째 지지 묘" },
+    { char: "瞄", meaning: "노려볼 묘" },
+    { char: "畮", meaning: "이랑 묘" },
+    { char: "䏚", meaning: "허구리 묘" },
+    { char: "嫹", meaning: "아름다울 묘" },
+    { char: "邜", meaning: "넷째 지지 묘" },
+    { char: "锚", meaning: "닻 묘" },
+    { char: "仯", meaning: "작은 모양 묘" },
+    { char: "㠺", meaning: "가는 그물 묘" },
+    { char: "鱙", meaning: "종족 이름 묘" },
+    { char: "渵", meaning: "큰물 묘" },
+    { char: "峁", meaning: "구릉 묘" },
+    { char: "鶓", meaning: "이묘 묘" },
+    { char: "䅺", meaning: "까끄라기 묘" },
+    { char: "篻", meaning: "대 이름 묘" },
+    { char: "缈", meaning: "아득할 묘" },
+    { char: "緢", meaning: "깃 술 묘" },
+    { char: "㑤", meaning: "예쁠 묘" },
+    { char: "笷", meaning: "대나무 묘" },
+    { char: "篎", meaning: "작은 피리 묘" },
+    { char: "鹋", meaning: "이묘 묘" },
+    { char: "䖢", meaning: "개미누에 묘" },
+    { char: "䁧", meaning: "부릅뜰 묘" },
+    { char: "䅦", meaning: "벼 여물지  묘" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "무": [
     { char: "儛", meaning: "춤 출 무" },
     { char: "務", meaning: "일 무" },
+    { char: "務", meaning: "업신여길 모" },
     { char: "嘸", meaning: "불분명할 무" },
     { char: "巫", meaning: "무당 무" },
     { char: "廡", meaning: "집 무" },
     { char: "憮", meaning: "어루만질 무" },
+    { char: "憮", meaning: "아리따울 후" },
+    { char: "憮", meaning: "클 호" },
     { char: "懋", meaning: "힘쓸 무" },
     { char: "戊", meaning: "다섯째 천간 무" },
     { char: "拇", meaning: "엄지손가락 무" },
@@ -3972,8 +5486,10 @@ const HANJA_DB = {
     { char: "無", meaning: "없을 무" },
     { char: "珷", meaning: "옥돌 무" },
     { char: "畝", meaning: "이랑 무" },
+    { char: "畝", meaning: "이랑 묘" },
     { char: "繆", meaning: "묶을 무" },
     { char: "膴", meaning: "포 무" },
+    { char: "膴", meaning: "등심 매" },
     { char: "舞", meaning: "춤출 무" },
     { char: "茂", meaning: "우거질 무" },
     { char: "蕪", meaning: "거칠어질 무" },
@@ -3982,14 +5498,230 @@ const HANJA_DB = {
     { char: "貿", meaning: "바꿀 무" },
     { char: "鍪", meaning: "투구 무" },
     { char: "霧", meaning: "안개 무" },
+    { char: "霧", meaning: "어두울 몽" },
     { char: "騖", meaning: "달릴 무" },
     { char: "鵡", meaning: "앵무새 무" },
+    { char: "瞀", meaning: "어두울 무" },
+    { char: "茻", meaning: "우거질 무" },
+    { char: "䥈", meaning: "다리미 무" },
+    { char: "䍙", meaning: "그물 무" },
+    { char: "撫", meaning: "어루만질 무" },
+    { char: "橅", meaning: "어루만질 무" },
+    { char: "鷚", meaning: "종달새 무" },
+    { char: "蓩", meaning: "취어초 무" },
+    { char: "瞴", meaning: "잠깐 볼 무" },
+    { char: "譕", meaning: "꾀는 말 무" },
+    { char: "鴾", meaning: "세가락메추라 무" },
+    { char: "鉧", meaning: "다리미 무" },
+    { char: "䓮", meaning: "잔풀 더부룩 무" },
+    { char: "㣎", meaning: "잔무늬 무" },
+    { char: "鞪", meaning: "투구 무" },
+    { char: "髳", meaning: "다박머리 무" },
+    { char: "髳", meaning: "오랑캐 무" },
+    { char: "霿", meaning: "인색할 무" },
+    { char: "无", meaning: "없을 무" },
+    { char: "抚", meaning: "어루만질 무" },
+    { char: "芜", meaning: "거칠 무" },
+    { char: "婺", meaning: "별 이름 무" },
+    { char: "霚", meaning: "안개 무" },
+    { char: "橆", meaning: "우거질 무" },
+    { char: "橆", meaning: "없을 무" },
+    { char: "雾", meaning: "안개 무" },
+    { char: "务", meaning: "힘쓸 무" },
+    { char: "敄", meaning: "힘쓸 무" },
+    { char: "幠", meaning: "모직물 무" },
+    { char: "怃", meaning: "어루만질 무" },
+    { char: "诬", meaning: "속일 무" },
+    { char: "嫵", meaning: "아리따울 무" },
+    { char: "柕", meaning: "모과나무 무" },
+    { char: "妩", meaning: "아리따울 무" },
+    { char: "捬", meaning: "어루만질 무" },
+    { char: "庑", meaning: "집 무" },
+    { char: "堥", meaning: "언덕 무" },
+    { char: "墲", meaning: "묏자리 무" },
+    { char: "娬", meaning: "아리따울 무" },
+    { char: "贸", meaning: "무역할 무" },
+    { char: "碔", meaning: "옥돌 무" },
+    { char: "缪", meaning: "얽을 무" },
+    { char: "㒇", meaning: "어루만질 무" },
+    { char: "㮊", meaning: "무성할 무" },
+    { char: "潕", meaning: "물 마를 무" },
+    { char: "㱐", meaning: "호반 무" },
+    { char: "㮘", meaning: "모과나무 무" },
+    { char: "骛", meaning: "달릴 무" },
+    { char: "暓", meaning: "침침할 무" },
+    { char: "仫", meaning: "소수 민족  무" },
+    { char: "㷻", meaning: "없을 무" },
+    { char: "䥐", meaning: "투구 무" },
+    { char: "愗", meaning: "어리석을 무" },
+    { char: "鵐", meaning: "세가락메추라 무" },
+    { char: "呒", meaning: "분명하지 않 무" },
+    { char: "䨁", meaning: "참새 새끼 무" },
+    { char: "劺", meaning: "격려할 무" },
+    { char: "璑", meaning: "광채 나는  무" },
+    { char: "䟼", meaning: "발자국 무" },
+    { char: "奦", meaning: "클 무" },
+    { char: "陚", meaning: "들 무" },
+    { char: "胟", meaning: "엄지손가락 무" },
+    { char: "莁", meaning: "흰 비름 무" },
+    { char: "甒", meaning: "술 단지 무" },
+    { char: "呣", meaning: "대답할 무" },
+    { char: "誈", meaning: "속일 무" },
+    { char: "躌", meaning: "발자국 무" },
+    { char: "錻", meaning: "주석 판 무" },
+    { char: "㵲", meaning: "물 마를 무" },
+    { char: "踇", meaning: "산 이름 무" },
+    { char: "倵", meaning: "사람 이름 무" },
+    { char: "鄮", meaning: "고을 이름 무" },
+    { char: "䳇", meaning: "앵무새 무" },
+    { char: "鷡", meaning: "메추라기 무" },
+    { char: "鹉", meaning: "앵무새 무" },
+    { char: "䉑", meaning: "대나무 무" },
+    { char: "䟥", meaning: "다박머리 무" },
+    { char: "䋷", meaning: "비단 무" },
+    { char: "熃", meaning: "주관할 무" },
+    { char: "䏬", meaning: "등 무" },
+    { char: "䀤", meaning: "강샘할 무" },
+    { char: "牳", meaning: "소 이름 무" },
+    { char: "嵍", meaning: "산 이름 무" },
+    { char: "蟱", meaning: "거미 무" },
+    { char: "䍒", meaning: "토끼그물 무" },
+    { char: "䱕", meaning: "황화어 무" },
+    { char: "鹀", meaning: "세가락메추라 무" },
+    { char: "䍢", meaning: "들창 망 무" },
+    { char: "㭌", meaning: "그릇 이름 무" },
+    { char: "㣳", meaning: "음역자 무" },
+    { char: "䒉", meaning: "긴 배 무" },
+    { char: "㡔", meaning: "수레 덮개 무" },
+    { char: "䱯", meaning: "물고기 이름 무" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "묵": [
     { char: "嘿", meaning: "고요할 묵" },
     { char: "嚜", meaning: "거짓 묵" },
+    { char: "嚜", meaning: "교활할 미" },
     { char: "墨", meaning: "먹 묵" },
     { char: "默", meaning: "묵묵할 묵" },
+    { char: "万", meaning: "성씨 묵" },
+    { char: "艒", meaning: "거룻배 묵" },
+    { char: "纆", meaning: "노끈 묵" },
+    { char: "黙", meaning: "묵묵할 묵" },
+    { char: "䘃", meaning: "박쥐 묵" },
+    { char: "䁇", meaning: "자세히 볼 묵" },
+    { char: "嫼", meaning: "성낼 묵" },
+    { char: "㷵", meaning: "불 묵" },
+    { char: "䁼", meaning: "보이지 않을 묵" },
+    { char: "癦", meaning: "사마귀 묵" },
+    { char: "爅", meaning: "불탈 묵" },
+    { char: "䁿", meaning: "졸리는 모양 묵" },
+    { char: "蟔", meaning: "쐐기 묵" },
+    { char: "㫯", meaning: "막 나아갈 묵" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "문": [
     { char: "亹", meaning: "땅이름 문" },
@@ -4002,11 +5734,14 @@ const HANJA_DB = {
     { char: "呅", meaning: "웃을 문" },
     { char: "問", meaning: "물을 문" },
     { char: "悗", meaning: "잊어버릴 문" },
+    { char: "悗", meaning: "의혹할 만" },
     { char: "懣", meaning: "번거로울 문" },
+    { char: "懣", meaning: "번민할 만" },
     { char: "抆", meaning: "닦을 문" },
     { char: "捫", meaning: "어루만질 문" },
     { char: "文", meaning: "무늬 문" },
     { char: "汶", meaning: "내 이름 문" },
+    { char: "汶", meaning: "산 이름 민" },
     { char: "炆", meaning: "따뜻할 문" },
     { char: "璊", meaning: "붉은 옥 문" },
     { char: "紊", meaning: "어지러울 문" },
@@ -4014,16 +5749,166 @@ const HANJA_DB = {
     { char: "蚊", meaning: "모기 문" },
     { char: "門", meaning: "문 문" },
     { char: "雯", meaning: "구름 무늬 문" },
+    { char: "絻", meaning: "상복 문" },
+    { char: "莬", meaning: "새로 자란  문" },
+    { char: "樠", meaning: "송진 문" },
+    { char: "脕", meaning: "싹 틀 문" },
+    { char: "䟂", meaning: "느리게 걸을 문" },
+    { char: "䜱", meaning: "정자 이름 문" },
+    { char: "㨺", meaning: "잡을 문" },
+    { char: "㡈", meaning: "굴건 문" },
+    { char: "歾", meaning: "목 벨 문" },
+    { char: "紋", meaning: "무늬 문" },
+    { char: "穈", meaning: "붉은 기장 문" },
+    { char: "抿", meaning: "닦을 문" },
+    { char: "脗", meaning: "꼭 맞을 문" },
+    { char: "门", meaning: "문 문" },
+    { char: "们", meaning: "들 문" },
+    { char: "彣", meaning: "문채 문" },
+    { char: "问", meaning: "물을 문" },
+    { char: "闻", meaning: "들을 문" },
+    { char: "㗃", meaning: "입술 문" },
+    { char: "怋", meaning: "번민할 문" },
+    { char: "㨉", meaning: "닦을 문" },
+    { char: "伆", meaning: "끊을 문" },
+    { char: "芠", meaning: "범의귀 문" },
+    { char: "渂", meaning: "물 이름 문" },
+    { char: "璺", meaning: "금 갈 문" },
+    { char: "纹", meaning: "무늬 문" },
+    { char: "閅", meaning: "문 문" },
+    { char: "魰", meaning: "문어 문" },
+    { char: "駇", meaning: "얼룩말 문" },
+    { char: "虋", meaning: "차조 문" },
+    { char: "㖧", meaning: "입술 문" },
+    { char: "䐇", meaning: "입술 문" },
+    { char: "暪", meaning: "어두울 문" },
+    { char: "妏", meaning: "여자의 자 문" },
+    { char: "䘇", meaning: "모기 문" },
+    { char: "菛", meaning: "문동 문" },
+    { char: "呡", meaning: "입술 문" },
+    { char: "馼", meaning: "얼룩말 문" },
+    { char: "肳", meaning: "입술 문" },
+    { char: "扪", meaning: "잡을 문" },
+    { char: "䎹", meaning: "들을 문" },
+    { char: "閿", meaning: "눈 내리깔고 문" },
+    { char: "闅", meaning: "내리깔고 볼 문" },
+    { char: "蚉", meaning: "모기 문" },
+    { char: "鍆", meaning: "멘델레븀 문" },
+    { char: "椚", meaning: "상수리나무 문" },
+    { char: "鈫", meaning: "화폐 단위 문" },
+    { char: "㵍", meaning: "물 가득한  문" },
+    { char: "蟁", meaning: "모기 문" },
+    { char: "鳼", meaning: "메추라기 새 문" },
+    { char: "䎽", meaning: "들을 문" },
+    { char: "㼂", meaning: "금 갈 문" },
+    { char: "閺", meaning: "내리깔고 볼 문" },
+    { char: "螡", meaning: "모기 문" },
+    { char: "䊟", meaning: "엉길 문" },
+    { char: "䰚", meaning: "어루만질 문" },
+    { char: "㖴", meaning: "후박나무 문" },
+    { char: "珳", meaning: "옥 무늬 문" },
+    { char: "钔", meaning: "멘델레븀 문" },
+    { char: "㻊", meaning: "붉은 옥 문" },
+    { char: "阌", meaning: "눈을 내리깔 문" },
+    { char: "䫒", meaning: "어리석을 문" },
+    { char: "鴍", meaning: "메추라기 새 문" },
+    { char: "鼤", meaning: "꼬리 알록진 문" },
+    { char: "䦩", meaning: "눈 내리깔고 문" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "물": [
     { char: "勿", meaning: "말 물" },
     { char: "沕", meaning: "아득할 물" },
+    { char: "沕", meaning: "아득할 매" },
+    { char: "沕", meaning: "잠길 밀" },
     { char: "物", meaning: "만물 물" },
+    { char: "䀛", meaning: "어두울 물" },
+    { char: "伆", meaning: "떠날 물" },
+    { char: "芴", meaning: "순무 물" },
+    { char: "㘬", meaning: "물건 물" },
+    { char: "昒", meaning: "새벽 물" },
+    { char: "曶", meaning: "새벽 물" },
+    { char: "岉", meaning: "산 높을 물" },
+    { char: "粅", meaning: "고운 가루 물" }
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "미": [
     { char: "亹", meaning: "힘쓸 미" },
     { char: "冞", meaning: "점점 미" },
     { char: "味", meaning: "맛 미" },
+    { char: "味", meaning: "광택 매" },
+    { char: "味", meaning: "광택 말" },
     { char: "娓", meaning: "장황할 미" },
     { char: "媄", meaning: "빛 고울 미" },
     { char: "媚", meaning: "아첨할 미" },
@@ -4041,6 +5926,7 @@ const HANJA_DB = {
     { char: "湄", meaning: "물 가 미" },
     { char: "湄", meaning: "더운 물 난" },
     { char: "瀰", meaning: "물 넓을 미" },
+    { char: "瀰", meaning: "물 흐를 니(이)" },
     { char: "獼", meaning: "원숭이 미" },
     { char: "眉", meaning: "눈썹 미" },
     { char: "米", meaning: "쌀 미" },
@@ -4054,14 +5940,261 @@ const HANJA_DB = {
     { char: "謎", meaning: "수수께끼 미" },
     { char: "迷", meaning: "미혹할 미" },
     { char: "靡", meaning: "쓰러질 미" },
+    { char: "靡", meaning: "갈 마" },
     { char: "麋", meaning: "큰사슴 미" },
     { char: "黴", meaning: "곰팡이 미" },
+    { char: "攠", meaning: "마손될 미" },
+    { char: "䊳", meaning: "부술 미" },
+    { char: "脢", meaning: "등심 미" },
+    { char: "鬽", meaning: "도깨비 미" },
+    { char: "浘", meaning: "물 흐르는  미" },
+    { char: "㩢", meaning: "닦을 미" },
+    { char: "瞴", meaning: "고운 눈 미" },
+    { char: "穈", meaning: "검은 기장 미" },
+    { char: "薇", meaning: "장미 미" },
+    { char: "郿", meaning: "땅 이름 미" },
+    { char: "濔", meaning: "물 가득할 미" },
+    { char: "摵", meaning: "내던질 미" },
+    { char: "獮", meaning: "원숭이 미" },
+    { char: "罙", meaning: "무릅쓸 미" },
+    { char: "䑐", meaning: "애꾸눈 미" },
+    { char: "弥", meaning: "활 부릴 미" },
+    { char: "頪", meaning: "죽 미" },
+    { char: "煝", meaning: "빛날 미" },
+    { char: "眯", meaning: "눈에 티 들 미" },
+    { char: "咪", meaning: "양 울 미" },
+    { char: "籋", meaning: "대껍질 미" },
+    { char: "㸏", meaning: "문드러질 미" },
+    { char: "苿", meaning: "오미자 미" },
+    { char: "檷", meaning: "실패 미" },
+    { char: "瑂", meaning: "옥돌 미" },
+    { char: "洣", meaning: "강 이름 미" },
+    { char: "侎", meaning: "어루만질 미" },
+    { char: "躾", meaning: "가르칠 미" },
+    { char: "癓", meaning: "발에 난 부 미" },
+    { char: "爢", meaning: "부서질 미" },
+    { char: "袮", meaning: "지명 미" },
+    { char: "蘪", meaning: "천궁 미" },
+    { char: "嵄", meaning: "산 미" },
+    { char: "㣲", meaning: "작을 미" },
+    { char: "㜫", meaning: "아름다울 미" },
+    { char: "詸", meaning: "수수께끼 미" },
+    { char: "鶥", meaning: "왜가리 미" },
+    { char: "谜", meaning: "수수께끼 미" },
+    { char: "㞑", meaning: "꼬리 미" },
+    { char: "吀", meaning: "양 울 미" },
+    { char: "睂", meaning: "눈썹 미" },
+    { char: "㵟", meaning: "이슬비 미" },
+    { char: "㵟", meaning: "물가 미" },
+    { char: "嬍", meaning: "아름다울 미" },
+    { char: "猕", meaning: "원숭이 미" },
+    { char: "咩", meaning: "양 울 미" },
+    { char: "徾", meaning: "서로 따를 미" },
+    { char: "麛", meaning: "사슴 새끼 미" },
+    { char: "溦", meaning: "이슬비 미" },
+    { char: "醚", meaning: "취할 미" },
+    { char: "㣆", meaning: "활 부릴 미" },
+    { char: "镁", meaning: "마그네슘 미" },
+    { char: "鎂", meaning: "마그네슘 미" },
+    { char: "㳽", meaning: "물 넓을 미" },
+    { char: "㜷", meaning: "어머니 미" },
+    { char: "䍘", meaning: "그물 미" },
+    { char: "瓕", meaning: "옥 이름 미" },
+    { char: "斖", meaning: "면려할 미" },
+    { char: "鹛", meaning: "왜가리 미" },
+    { char: "渳", meaning: "물의 형용 미" },
+    { char: "醾", meaning: "탁주 미" },
+    { char: "瞇", meaning: "애꾸눈 미" },
+    { char: "覹", meaning: "엿볼 미" },
+    { char: "䋛", meaning: "수놓은 쌀알 미" },
+    { char: "葿", meaning: "황금 미" },
+    { char: "䴢", meaning: "순록 미" },
+    { char: "堳", meaning: "담 미" },
+    { char: "嶶", meaning: "산 이름 미" },
+    { char: "镾", meaning: "활 부릴 미" },
+    { char: "㜆", meaning: "어머니 미" },
+    { char: "鸍", meaning: "상오리 미" },
+    { char: "灖", meaning: "흐를 미" },
+    { char: "蝞", meaning: "새우 미" },
+    { char: "眫", meaning: "눈에 티가  미" },
+    { char: "睸", meaning: "눈멀 미" },
+    { char: "㴹", meaning: "자맥질할 미" },
+    { char: "醿", meaning: "탁주 미" },
+    { char: "䌕", meaning: "고삐 미" },
+    { char: "釄", meaning: "탁주 미" },
+    { char: "荱", meaning: "풀 이름 미" },
+    { char: "孊", meaning: "여자의 자 미" },
+    { char: "蔝", meaning: "별꽃 미" },
+    { char: "䞔", meaning: "붉은색 미" },
+    { char: "䓺", meaning: "미무 미" },
+    { char: "䆊", meaning: "씨 뿌릴 미" },
+    { char: "蒾", meaning: "협미 미" },
+    { char: "霺", meaning: "이슬비 미" },
+    { char: "鮇", meaning: "곤들매기 미" },
+    { char: "艉", meaning: "고물 미" },
+    { char: "擟", meaning: "산 이름 미" },
+    { char: "脒", meaning: "아미딘 미" },
+    { char: "銤", meaning: "오스뮴 미" },
+    { char: "麊", meaning: "땅 이름 미" },
+    { char: "葞", meaning: "백미 미" },
+    { char: "㝥", meaning: "잠 깊이 들 미" },
+    { char: "袰", meaning: "지명 미" },
+    { char: "䙿", meaning: "볼 미" },
+    { char: "猸", meaning: "몽구스 미" },
+    { char: "䕷", meaning: "도미 미" },
+    { char: "䬿", meaning: "대궁 미" },
+    { char: "矀", meaning: "엿볼 미" },
+    { char: "㥝", meaning: "연마할 미" },
+    { char: "䅏", meaning: "죽 미" },
+    { char: "蝆", meaning: "바구미 미" },
+    { char: "攗", meaning: "세모진 마름 미" },
+    { char: "䥩", meaning: "갈고리 미" },
+    { char: "䛧", meaning: "수수께끼 미" },
+    { char: "䥸", meaning: "낫 미" },
+    { char: "鎇", meaning: "아메리슘 미" },
+    { char: "㧠", meaning: "산 이름 미" },
+    { char: "䊊", meaning: "죽 미" },
+    { char: "篃", meaning: "대나무 이름 미" },
+    { char: "䕳", meaning: "풀 이름 미" },
+    { char: "镅", meaning: "아메리슘 미" },
+    { char: "䱊", meaning: "어란 미" },
+    { char: "㠧", meaning: "험준할 미" },
+    { char: "䉋", meaning: "대 이름 미" },
+    { char: "㟜", meaning: "높고 뾰족할 미" },
+    { char: "䉠", meaning: "대나무 이름 미" },
+    { char: "䭧", meaning: "아이에게 젖 미" },
+    { char: "䉲", meaning: "대껍질 미" },
+    { char: "䇻", meaning: "대 이름 미" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "민": [
     { char: "僶", meaning: "어거지로 할 민" },
     { char: "勔", meaning: "권면할 민" },
+    { char: "勔", meaning: "힘쓸 면" },
     { char: "岷", meaning: "산이름 민" },
     { char: "忞", meaning: "강인할 민" },
+    { char: "忞", meaning: "어지러울 문" },
     { char: "悶", meaning: "번민할 민" },
     { char: "愍", meaning: "근심할 민" },
     { char: "憫", meaning: "불쌍히 여길 민" },
@@ -4070,16 +6203,157 @@ const HANJA_DB = {
     { char: "旼", meaning: "온화할 민" },
     { char: "暋", meaning: "굳셀 민" },
     { char: "民", meaning: "백성 민" },
+    { char: "民", meaning: "잠잘 면" },
     { char: "泯", meaning: "망할 민" },
+    { char: "泯", meaning: "뒤섞일 면" },
     { char: "玟", meaning: "옥돌 민" },
+    { char: "玟", meaning: "옥 무늬 문" },
     { char: "珉", meaning: "아름다운돌 민" },
     { char: "緡", meaning: "낚시줄 민" },
+    { char: "緡", meaning: "새 우는 소 면" },
+    { char: "緡", meaning: "성할 혼" },
     { char: "罠", meaning: "그물 민" },
     { char: "苠", meaning: "속대 민" },
     { char: "閔", meaning: "위문할 민" },
     { char: "閩", meaning: "종족이름 민" },
     { char: "鰵", meaning: "대구 민" },
     { char: "黽", meaning: "힘쓸 민" },
+    { char: "黽", meaning: "맹꽁이 맹" },
+    { char: "黽", meaning: "고을 이름 면" },
+    { char: "黾", meaning: "힘쓸 민" },
+    { char: "澠", meaning: "고을 이름 민" },
+    { char: "湣", meaning: "시호 민" },
+    { char: "蠠", meaning: "강잉할 민" },
+    { char: "抿", meaning: "어루만질 민" },
+    { char: "脗", meaning: "꼭 맞을 민" },
+    { char: "怋", meaning: "어지러울 민" },
+    { char: "㨉", meaning: "어루만질 민" },
+    { char: "渂", meaning: "산 이름 민" },
+    { char: "惛", meaning: "번민할 민" },
+    { char: "敃", meaning: "강인할 민" },
+    { char: "痻", meaning: "앓을 민" },
+    { char: "慜", meaning: "총명할 민" },
+    { char: "潣", meaning: "물 펀히 흐 민" },
+    { char: "鍲", meaning: "돈꿰미 민" },
+    { char: "闵", meaning: "근심할 민" },
+    { char: "闷", meaning: "답답할 민" },
+    { char: "闽", meaning: "종족 이름 민" },
+    { char: "忟", meaning: "힘쓸 민" },
+    { char: "勄", meaning: "민첩할 민" },
+    { char: "緍", meaning: "낚싯줄 민" },
+    { char: "鈱", meaning: "돈꿰미 민" },
+    { char: "䪸", meaning: "강할 민" },
+    { char: "殙", meaning: "기절할 민" },
+    { char: "㳷", meaning: "맞을 민" },
+    { char: "盷", meaning: "보는 모양 민" },
+    { char: "砇", meaning: "옥돌 민" },
+    { char: "䃉", meaning: "옥돌 민" },
+    { char: "盿", meaning: "보는 모양 민" },
+    { char: "瑉", meaning: "옥돌 민" },
+    { char: "錉", meaning: "돈꿰미 민" },
+    { char: "燘", meaning: "뜨거울 민" },
+    { char: "琘", meaning: "옥돌 민" },
+    { char: "琝", meaning: "옥돌 민" },
+    { char: "渑", meaning: "고을 이름 민" },
+    { char: "焖", meaning: "데칠 민" },
+    { char: "冺", meaning: "망할 민" },
+    { char: "悯", meaning: "불쌍히 여길 민" },
+    { char: "燜", meaning: "데칠 민" },
+    { char: "㢯", meaning: "깃발 민" },
+    { char: "㫣", meaning: "힘쓸 민" },
+    { char: "缗", meaning: "낚싯줄 민" },
+    { char: "碈", meaning: "옥돌 민" },
+    { char: "垊", meaning: "땅 이름 민" },
+    { char: "㥸", meaning: "근심할 민" },
+    { char: "䂥", meaning: "옥돌 민" },
+    { char: "䝧", meaning: "밑천 민" },
+    { char: "䋋", meaning: "낚싯줄 민" },
+    { char: "㥃", meaning: "답답할 민" },
+    { char: "䲄", meaning: "다금바리 민" },
+    { char: "敯", meaning: "무릅쓸 민" },
+    { char: "䁕", meaning: "굽어볼 민" },
+    { char: "崏", meaning: "산 이름 민" },
+    { char: "姄", meaning: "여자의 자 민" },
+    { char: "笢", meaning: "대껍질 민" },
+    { char: "捪", meaning: "닦을 민" },
+    { char: "㞶", meaning: "산 이름 민" },
+    { char: "簢", meaning: "대 이름 민" },
+    { char: "鴖", meaning: "새 이름 민" },
+    { char: "䡑", meaning: "수레바퀴 테 민" },
+    { char: "鳘", meaning: "다금바리 민" },
+    { char: "㟩", meaning: "산 이름 민" },
+    { char: "㬆", meaning: "시호 민" },
+    { char: "刡", meaning: "깎을 민" },
+    { char: "䟨", meaning: "비틀거리며  민" },
+    { char: "䡻", meaning: "수레바퀴 테 민" },
+    { char: "㟭", meaning: "산 이름 민" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "밀": [
     { char: "密", meaning: "빽빽할 밀" },
@@ -4087,6 +6361,40 @@ const HANJA_DB = {
     { char: "滵", meaning: "흐를 밀" },
     { char: "蜜", meaning: "꿀 밀" },
     { char: "謐", meaning: "고요할 밀" },
+    { char: "蠠", meaning: "강잉할 밀" },
+    { char: "䁇", meaning: "자세히 볼 밀" },
+    { char: "宻", meaning: "빽빽할 밀" },
+    { char: "谧", meaning: "고요할 밀" },
+    { char: "䤉", meaning: "탁주 밀" },
+    { char: "榓", meaning: "향나무 밀" },
+    { char: "㫘", meaning: "숨을 밀" },
+    { char: "蔤", meaning: "연근 밀" },
+    { char: "峚", meaning: "산 이름 밀" },
+    { char: "䛑", meaning: "고요할 밀" },
+    { char: "㳴", meaning: "진흙 밀" },
+    { char: "㵥", meaning: "넘치는 물  밀" },
+    { char: "櫁", meaning: "침향 밀" },
+    { char: "藌", meaning: "연근 밀" },
+    { char: "嘧", meaning: "피리미딘 밀" },
+    { char: "淧", meaning: "넘치는 물  밀" },
+    { char: "㴵", meaning: "넘치는 물  밀" }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "박": [
     { char: "亳", meaning: "땅이름 박" },
@@ -4199,6 +6507,7 @@ const HANJA_DB = {
     { char: "搒", meaning: "배저을 방" },
     { char: "放", meaning: "놓을 방" },
     { char: "方", meaning: "모 방" },
+    { char: "方", meaning: "괴물 망" },
     { char: "旁", meaning: "두루 방" },
     { char: "旊", meaning: "옹기장 방" },
     { char: "昉", meaning: "마침 방" },
@@ -4231,6 +6540,22 @@ const HANJA_DB = {
     { char: "龍", meaning: "은총 총" },
     { char: "龐", meaning: "어지러울 방" },
     { char: "龐", meaning: "충실할 롱(농)" },
+    { char: "狵", meaning: "삽살개 방" },
+    { char: "痝", meaning: "앓을 방" },
+    { char: "硥", meaning: "방합 방" },
+    { char: "蛖", meaning: "방합 방" },
+    { char: "㟌", meaning: "산 이름 방" },
+    { char: "㤶", meaning: "어리석을 방" },
+    { char: "浝", meaning: "물 이름 방" },
+    { char: "庬", meaning: "두터울 방" }
+  
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "배": [
     { char: "裵", meaning: "치렁치렁할 배" },
@@ -4270,6 +6595,10 @@ const HANJA_DB = {
     { char: "百", meaning: "일백 백" },
     { char: "粨", meaning: "헥터메트르 백" },
     { char: "魄", meaning: "넋 백" },
+    { char: "絔", meaning: "기울 백" },
+    { char: "銆", meaning: "병기 이름 백" }
+  
+  ,
   ],
   "번": [
     { char: "反", meaning: "되돌릴 번" },
@@ -4291,6 +6620,8 @@ const HANJA_DB = {
     { char: "袢", meaning: "속옷 번" },
     { char: "蹯", meaning: "짐승 발바닥 번" },
     { char: "飜", meaning: "뒤칠 번" },
+    { char: "笲", meaning: "폐백 상자 번" }
+  ,
   ],
   "벌": [
     { char: "浌", meaning: "물 이름 벌" },
@@ -4316,6 +6647,7 @@ const HANJA_DB = {
   ],
   "벡": [
     { char: "佰", meaning: "일백 백" },
+    { char: "佰", meaning: "밭두둑 맥" },
   ],
   "벽": [
     { char: "僻", meaning: "후미질 벽" },
@@ -4357,6 +6689,12 @@ const HANJA_DB = {
     { char: "駢", meaning: "나란히 할 변" },
     { char: "骿", meaning: "통갈비 변" },
     { char: "鴘", meaning: "매 변" },
+    { char: "笲", meaning: "폐백 상자 변" },
+    { char: "牑", meaning: "청널 변" },
+    { char: "臱", meaning: "제기 이름 변" }
+  
+  
+  ,
   ],
   "별": [
     { char: "丿", meaning: "삐침 별" },
@@ -4369,6 +6707,8 @@ const HANJA_DB = {
     { char: "閉", meaning: "막을 별" },
     { char: "鷩", meaning: "금계 별" },
     { char: "鼈", meaning: "자라 별" },
+    { char: "覕", meaning: "언뜻 볼 별" }
+  ,
   ],
   "병": [
     { char: "丙", meaning: "남녘 병" },
@@ -4430,6 +6770,7 @@ const HANJA_DB = {
     { char: "卜", meaning: "점 복" },
     { char: "墣", meaning: "흙덩이 복" },
     { char: "宓", meaning: "고요할 복" },
+    { char: "宓", meaning: "편안할 밀" },
     { char: "幞", meaning: "건 복" },
     { char: "復", meaning: "돌아올 복" },
     { char: "扑", meaning: "두드릴 복" },
@@ -4561,6 +6902,12 @@ const HANJA_DB = {
     { char: "鮒", meaning: "붕어 부" },
     { char: "鳧", meaning: "오리 부" },
     { char: "麩", meaning: "밀기울 부" },
+    { char: "俛", meaning: "숙일 부" },
+    { char: "捬", meaning: "어루만질 부" },
+    { char: "陚", meaning: "작은 언덕 부" }
+  
+  
+  ,
   ],
   "북": [
     { char: "僰", meaning: "북방민족 북" },
@@ -4610,6 +6957,10 @@ const HANJA_DB = {
     { char: "鱝", meaning: "가오리 분" },
     { char: "黺", meaning: "수놓을 분" },
     { char: "鼢", meaning: "두더지 분" },
+    { char: "坆", meaning: "무덤 분" },
+    { char: "敃", meaning: "어지러울 분" }
+  
+  ,
   ],
   "불": [
     { char: "不", meaning: "아닐 불" },
@@ -4732,6 +7083,10 @@ const HANJA_DB = {
     { char: "鯡", meaning: "곤이 비" },
     { char: "鼙", meaning: "마상북 비" },
     { char: "鼻", meaning: "코 비" },
+    { char: "䀣", meaning: "똑바로 볼 비" },
+    { char: "癓", meaning: "발에 난 부 비" }
+  
+  ,
   ],
   "빈": [
     { char: "朩", meaning: "삼줄기 껍질 빈" },
@@ -4831,7 +7186,9 @@ const HANJA_DB = {
     { char: "笥", meaning: "상자 사" },
     { char: "篩", meaning: "체 사" },
     { char: "糸", meaning: "가는 실 사" },
+    { char: "糸", meaning: "가는 실 멱" },
     { char: "紗", meaning: "깁 사" },
+    { char: "紗", meaning: "작을 묘" },
     { char: "絲", meaning: "실 사" },
     { char: "肆", meaning: "방자할 사" },
     { char: "舍", meaning: "집 사" },
@@ -4856,6 +7213,16 @@ const HANJA_DB = {
     { char: "鯋", meaning: "상어 사" },
     { char: "鰤", meaning: "새우 사" },
     { char: "麝", meaning: "사향노루 사" },
+    { char: "纟", meaning: "실 사" },
+    { char: "糹", meaning: "실 사" },
+    { char: "厶", meaning: "사사 사" },
+    { char: "㠺", meaning: "가는 실 사" },
+    { char: "瓕", meaning: "활 부릴 사" }
+  
+  
+  
+  
+  ,
   ],
   "삭": [
     { char: "削", meaning: "깎을 삭" },
@@ -5001,6 +7368,8 @@ const HANJA_DB = {
     { char: "索", meaning: "찾을 색" },
     { char: "色", meaning: "빛 색" },
     { char: "賾", meaning: "깊숙할 색" },
+    { char: "摵", meaning: "털어낼 색" }
+  ,
   ],
   "생": [
     { char: "栍", meaning: "찌 생" },
@@ -5136,6 +7505,8 @@ const HANJA_DB = {
     { char: "鱓", meaning: "두렁허리 선" },
     { char: "鱔", meaning: "드렁허리 선" },
     { char: "鱻", meaning: "생선 선" },
+    { char: "獮", meaning: "죽일 선" }
+  ,
   ],
   "설": [
     { char: "偰", meaning: "맑을 설" },
@@ -5198,6 +7569,8 @@ const HANJA_DB = {
     { char: "躡", meaning: "밟을 섭" },
     { char: "鑷", meaning: "쪽집게 섭" },
     { char: "顳", meaning: "귀밑 뼈 섭" },
+    { char: "籋", meaning: "족집게 섭" }
+  ,
   ],
   "성": [
     { char: "城", meaning: "보루 성" },
@@ -5220,6 +7593,8 @@ const HANJA_DB = {
     { char: "誠", meaning: "미쁠 성" },
     { char: "醒", meaning: "술 깰 성" },
     { char: "騂", meaning: "붉은 소 성" },
+    { char: "琞", meaning: "성인 성" }
+  ,
   ],
   "세": [
     { char: "世", meaning: "세상 세" },
@@ -5354,6 +7729,8 @@ const HANJA_DB = {
     { char: "送", meaning: "보낼 송" },
     { char: "頌", meaning: "기릴 송" },
     { char: "鬆", meaning: "더부룩할 송" },
+    { char: "鏓", meaning: "큰 끌 송" }
+  ,
   ],
   "솨": [
     { char: "惢", meaning: "실망할 우" },
@@ -5542,6 +7919,8 @@ const HANJA_DB = {
     { char: "鬊", meaning: "헝클어질 순" },
     { char: "鶉", meaning: "메추라기 순" },
     { char: "鶉", meaning: "수리 단" },
+    { char: "䐇", meaning: "입술 순" }
+  ,
   ],
   "술": [
     { char: "噊", meaning: "위태할 술" },
@@ -5589,8 +7968,12 @@ const HANJA_DB = {
     { char: "昇", meaning: "해 돋을 승" },
     { char: "甸", meaning: "다스릴 승" },
     { char: "繩", meaning: "노끈 승" },
+    { char: "繩", meaning: "여물 잉" },
+    { char: "繩", meaning: "많을 민" },
     { char: "蠅", meaning: "파리 승" },
     { char: "鬙", meaning: "더부룩할 승" },
+    { char: "澠", meaning: "강 이름 승" }
+  ,
   ],
   "시": [
     { char: "乨", meaning: "처음 시" },
@@ -5647,6 +8030,8 @@ const HANJA_DB = {
     { char: "顋", meaning: "뺨 시" },
     { char: "飴", meaning: "기를 시" },
     { char: "鰣", meaning: "준치 시" },
+    { char: "鸍", meaning: "상오리 시" }
+  ,
   ],
   "식": [
     { char: "喰", meaning: "먹을 식" },
@@ -5740,6 +8125,8 @@ const HANJA_DB = {
     { char: "鐔", meaning: "날밑 담" },
     { char: "鱏", meaning: "칼철갑상어 심" },
     { char: "鱘", meaning: "심어 심" },
+    { char: "罙", meaning: "깊을 심" }
+  ,
   ],
   "십": [
     { char: "什", meaning: "열 사람 십" },
@@ -5856,6 +8243,8 @@ const HANJA_DB = {
     { char: "頞", meaning: "콧마루 알" },
     { char: "鴶", meaning: "뻐꾸기 알" },
     { char: "鴶", meaning: "뻐꾸기 길" },
+    { char: "嫼", meaning: "성낼 알" }
+  ,
   ],
   "암": [
     { char: "唵", meaning: "머금을 암" },
@@ -6557,6 +8946,8 @@ const HANJA_DB = {
     { char: "蝸", meaning: "고둥 라(나)" },
     { char: "訛", meaning: "거짓말 와" },
     { char: "譌", meaning: "거짓 와" },
+    { char: "薶", meaning: "더럽힐 와" }
+  ,
   ],
   "완": [
     { char: "剜", meaning: "깎을 완" },
@@ -6618,6 +9009,8 @@ const HANJA_DB = {
     { char: "矮", meaning: "난장이 왜" },
     { char: "蛙", meaning: "개구리 왜" },
     { char: "蛙", meaning: "두견이 결" },
+    { char: "薶", meaning: "더럽힐 왜" }
+  ,
   ],
   "외": [
     { char: "偎", meaning: "사랑할 외" },
@@ -6635,6 +9028,8 @@ const HANJA_DB = {
     { char: "磈", meaning: "돌무더기 괴" },
     { char: "聵", meaning: "배냇귀머거리 외" },
     { char: "隈", meaning: "모퉁이 외" },
+    { char: "薶", meaning: "더럽힐 외" }
+  ,
   ],
   "욋": [
     { char: "夞", meaning: "땅 이름 욋" },
@@ -6681,6 +9076,7 @@ const HANJA_DB = {
     { char: "祅", meaning: "재앙 요" },
     { char: "穾", meaning: "깊숙할 요" },
     { char: "窅", meaning: "움펑눈 요" },
+    { char: "窅", meaning: "한탄하고 원 면" },
     { char: "窈", meaning: "고요할 요" },
     { char: "窯", meaning: "기와가마 요" },
     { char: "約", meaning: "약속할 요" },
@@ -6701,6 +9097,10 @@ const HANJA_DB = {
     { char: "饒", meaning: "용서할 요" },
     { char: "鰩", meaning: "날치 요" },
     { char: "鷂", meaning: "장끼 요" },
+    { char: "么", meaning: "작을 요" },
+    { char: "㘬", meaning: "우묵할 요" }
+  
+  ,
   ],
   "욕": [
     { char: "縟", meaning: "꾸밀 욕" },
@@ -6746,6 +9146,10 @@ const HANJA_DB = {
     { char: "鎔", meaning: "불릴 용" },
     { char: "鏞", meaning: "큰 쇠북 용" },
     { char: "鱅", meaning: "용어 용" },
+    { char: "㲝", meaning: "많을 용" },
+    { char: "甮", meaning: "말 용" }
+  
+  ,
   ],
   "우": [
     { char: "盱", meaning: "쳐다볼 우" },
@@ -6803,10 +9207,15 @@ const HANJA_DB = {
     { char: "麀", meaning: "암사슴 우" },
     { char: "麌", meaning: "숫사슴 우" },
     { char: "齲", meaning: "충치 우" },
+    { char: "犘", meaning: "소 이름 우" },
+    { char: "桙", meaning: "사발 우" }
+  
+  ,
   ],
   "욱": [
     { char: "澳", meaning: "후미 욱" },
     { char: "勖", meaning: "힘쓸 욱" },
+    { char: "勖", meaning: "힘쓸 무" },
     { char: "噢", meaning: "슬퍼할 욱" },
     { char: "奧", meaning: "따스할 욱" },
     { char: "旭", meaning: "빛날 욱" },
@@ -6894,6 +9303,8 @@ const HANJA_DB = {
     { char: "鴛", meaning: "숫원앙새 원" },
     { char: "鵷", meaning: "원추새 원" },
     { char: "黿", meaning: "큰 자라 원" },
+    { char: "夘", meaning: "누워 뒹굴 원" }
+  ,
   ],
   "월": [
     { char: "刖", meaning: "발꿈치 자를 월" },
@@ -6954,6 +9365,8 @@ const HANJA_DB = {
     { char: "餧", meaning: "먹일 위" },
     { char: "餧", meaning: "주릴 뇌" },
     { char: "魏", meaning: "위나라 위" },
+    { char: "揻", meaning: "굽힐 위" }
+  ,
   ],
   "유": [
     { char: "丣", meaning: "닭 유" },
@@ -7064,6 +9477,8 @@ const HANJA_DB = {
     { char: "黝", meaning: "검푸를 유" },
     { char: "鼬", meaning: "청서 유" },
     { char: "龥", meaning: "부르짖을 유" },
+    { char: "泖", meaning: "물 모양 유" }
+  ,
   ],
   "육": [
     { char: "唷", meaning: "소리지를 육" },
@@ -7083,6 +9498,7 @@ const HANJA_DB = {
     { char: "尹", meaning: "다스릴 윤" },
     { char: "昀", meaning: "햇빛 윤" },
     { char: "玧", meaning: "귀막이 구슬 윤" },
+    { char: "玧", meaning: "붉은 구슬 문" },
     { char: "胤", meaning: "맏아들 윤" },
     { char: "論", meaning: "차례 륜" },
     { char: "論", meaning: "논할 론(논)" },
@@ -7150,6 +9566,8 @@ const HANJA_DB = {
     { char: "霪", meaning: "장마 음" },
     { char: "音", meaning: "소리 음" },
     { char: "飲", meaning: "마실 음" },
+    { char: "䣾", meaning: "술 취한 소 음" }
+  ,
   ],
   "읍": [
     { char: "俋", meaning: "날쌜 읍" },
@@ -7418,6 +9836,8 @@ const HANJA_DB = {
     { char: "鶿", meaning: "가마우지 자" },
     { char: "鷓", meaning: "자고 자" },
     { char: "齊", meaning: "옷단 자" },
+    { char: "屘", meaning: "어린아이 자" }
+  ,
   ],
   "작": [
     { char: "仢", meaning: "외나무 다리 작" },
@@ -7760,6 +10180,7 @@ const HANJA_DB = {
     { char: "電", meaning: "번개 전" },
     { char: "靛", meaning: "푸른 대 전" },
     { char: "靦", meaning: "무안할 전" },
+    { char: "靦", meaning: "부끄러워하는 면" },
     { char: "顓", meaning: "어리석을 전" },
     { char: "顚", meaning: "이마 전" },
     { char: "顛", meaning: "엎드러질 전" },
@@ -7771,6 +10192,10 @@ const HANJA_DB = {
     { char: "鬋", meaning: "수염 깎을 전" },
     { char: "鱣", meaning: "전어 전" },
     { char: "鸇", meaning: "구진매 전" },
+    { char: "㛯", meaning: "짝 전" },
+    { char: "盷", meaning: "눈알 굴릴 전" }
+  
+  ,
   ],
   "절": [
     { char: "卩", meaning: "몸기 절" },
@@ -7829,6 +10254,8 @@ const HANJA_DB = {
     { char: "跕", meaning: "미끄러질 접" },
     { char: "蹀", meaning: "걸을 접" },
     { char: "鰈", meaning: "가자미 접" },
+    { char: "䜆", meaning: "말이 빠를 접" }
+  ,
   ],
   "정": [
     { char: "丁", meaning: "장정 정" },
@@ -8059,6 +10486,8 @@ const HANJA_DB = {
     { char: "鳥", meaning: "땅 이름 작" },
     { char: "鳥", meaning: "섬 도" },
     { char: "鵰", meaning: "수리 조" },
+    { char: "樢", meaning: "담쟁이 조" }
+  ,
   ],
   "족": [
     { char: "哫", meaning: "아첨할 족" },
@@ -8422,6 +10851,8 @@ const HANJA_DB = {
     { char: "陳", meaning: "늘어놓을 진" },
     { char: "震", meaning: "벼락 진" },
     { char: "鬒", meaning: "숱 많을 진" },
+    { char: "䑐", meaning: "밝을 진" }
+  ,
   ],
   "질": [
     { char: "佚", meaning: "흐릴 질" },
@@ -8930,6 +11361,12 @@ const HANJA_DB = {
     { char: "髫", meaning: "다박머리 초" },
     { char: "鷦", meaning: "뱁새 초" },
     { char: "齠", meaning: "이를 갈 초" },
+    { char: "朷", meaning: "나뭇가지 질 초" },
+    { char: "訬", meaning: "재빠를 초" },
+    { char: "仯", meaning: "작은 모양 초" }
+  
+  
+  ,
   ],
   "촉": [
     { char: "趣", meaning: "재촉할 촉" },
@@ -8977,6 +11414,8 @@ const HANJA_DB = {
     { char: "銃", meaning: "도끼 구멍 총" },
     { char: "鏦", meaning: "창 총" },
     { char: "驄", meaning: "총이말 총" },
+    { char: "鏓", meaning: "큰 끌 총" }
+  ,
   ],
   "촬": [
     { char: "撮", meaning: "잡을 촬" },
@@ -9211,6 +11650,8 @@ const HANJA_DB = {
     { char: "鯔", meaning: "숭어 치" },
     { char: "鴟", meaning: "솔개 치" },
     { char: "齒", meaning: "이 치" },
+    { char: "袮", meaning: "꿰맬 치" }
+  ,
   ],
   "칙": [
     { char: "侙", meaning: "두려워할 칙" },
@@ -9344,6 +11785,8 @@ const HANJA_DB = {
     { char: "踱", meaning: "맨발로 걸을 탁" },
     { char: "逴", meaning: "멀 탁" },
     { char: "鐸", meaning: "요령 탁" },
+    { char: "狵", meaning: "별 이름 탁" }
+  ,
   ],
   "탄": [
     { char: "僤", meaning: "도타울 탄" },
@@ -9424,6 +11867,7 @@ const HANJA_DB = {
     { char: "台", meaning: "늙을 대" },
     { char: "台", meaning: "이을 사" },
     { char: "呆", meaning: "어리석을 태" },
+    { char: "呆", meaning: "지킬 보" },
     { char: "埭", meaning: "보뚝 태" },
     { char: "太", meaning: "클 태" },
     { char: "怠", meaning: "게으를 태" },
@@ -9538,6 +11982,7 @@ const HANJA_DB = {
     { char: "岥", meaning: "산 비알질 파" },
     { char: "巴", meaning: "꼬리 파" },
     { char: "帕", meaning: "수건 파" },
+    { char: "帕", meaning: "머리띠 말" },
     { char: "怕", meaning: "두려울 파" },
     { char: "把", meaning: "잡을 파" },
     { char: "播", meaning: "심을 파" },
@@ -9564,6 +12009,8 @@ const HANJA_DB = {
     { char: "鄱", meaning: "땅이름 파" },
     { char: "靶", meaning: "고삐 파" },
     { char: "頗", meaning: "비뚤어질 파" },
+    { char: "袙", meaning: "휘장 파" }
+  ,
   ],
   "판": [
     { char: "汴", meaning: "물 이름 판" },
@@ -9589,6 +12036,7 @@ const HANJA_DB = {
   ],
   "패": [
     { char: "伯", meaning: "우두머리 패" },
+    { char: "伯", meaning: "길 맥" },
     { char: "佩", meaning: "패옥 패" },
     { char: "倍", meaning: "어길 패" },
     { char: "唄", meaning: "염불소리 패" },
@@ -9648,6 +12096,8 @@ const HANJA_DB = {
     { char: "鞭", meaning: "채찍 편" },
     { char: "騙", meaning: "속일 편" },
     { char: "鯿", meaning: "병어 편" },
+    { char: "牑", meaning: "널평상 편" }
+  ,
   ],
   "폄": [
     { char: "砭", meaning: "돌침 폄" },
@@ -9779,6 +12229,10 @@ const HANJA_DB = {
     { char: "驃", meaning: "날쌜 표" },
     { char: "髟", meaning: "머리털 표" },
     { char: "鰾", meaning: "부레 표" },
+    { char: "䅺", meaning: "이삭 팬 벼 표" },
+    { char: "篻", meaning: "대 이름 표" }
+  
+  ,
   ],
   "푼": [
     { char: "分", meaning: "세는 단위 푼" },
@@ -9809,6 +12263,8 @@ const HANJA_DB = {
     { char: "詖", meaning: "말 잘할 피" },
     { char: "跛", meaning: "절뚝발이 피" },
     { char: "辟", meaning: "피할 피" },
+    { char: "辟", meaning: "비유할 비" },
+    { char: "辟", meaning: "그칠 미" },
     { char: "避", meaning: "숨을 피" },
     { char: "陂", meaning: "기울어질 피" },
     { char: "鞁", meaning: "말 가슴걸이 피" },
@@ -9821,6 +12277,7 @@ const HANJA_DB = {
     { char: "佖", meaning: "점잔피울 필" },
     { char: "佛", meaning: "흥할 필" },
     { char: "匹", meaning: "짝 필" },
+    { char: "匹", meaning: "비유할 비" },
     { char: "吡", meaning: "새소리 필" },
     { char: "咇", meaning: "향기날 필" },
     { char: "嗶", meaning: "울 필" },
@@ -9834,6 +12291,8 @@ const HANJA_DB = {
     { char: "篳", meaning: "대 사립문 필" },
     { char: "罼", meaning: "토끼그물 필" },
     { char: "苾", meaning: "향기로울 필" },
+    { char: "苾", meaning: "나물 이름 별" },
+    { char: "苾", meaning: "연뿌리 밀" },
     { char: "蓽", meaning: "휘추리 필" },
     { char: "觱", meaning: "쌀쌀할 필" },
     { char: "蹕", meaning: "길 치울 필" },
@@ -9841,6 +12300,12 @@ const HANJA_DB = {
     { char: "馝", meaning: "향내날 필" },
     { char: "駜", meaning: "살찐 말 필" },
     { char: "鵯", meaning: "갈가마귀 필" },
+    { char: "鴓", meaning: "새 이름 필" },
+    { char: "䤉", meaning: "탁주 필" },
+    { char: "榓", meaning: "향나무 필" }
+  
+  
+  ,
   ],
   "핍": [
     { char: "乏", meaning: "없을 핍" },
@@ -9887,6 +12352,7 @@ const HANJA_DB = {
     { char: "學", meaning: "가르칠 교" },
     { char: "涸", meaning: "마를 학" },
     { char: "狢", meaning: "오소리 학" },
+    { char: "狢", meaning: "종족 이름 맥" },
     { char: "瘧", meaning: "학질 학" },
     { char: "皬", meaning: "흴 학" },
     { char: "确", meaning: "확실할 학" },
@@ -9896,6 +12362,10 @@ const HANJA_DB = {
     { char: "郝", meaning: "성씨 학" },
     { char: "鶴", meaning: "두루미 학" },
     { char: "鷽", meaning: "메까치 학" },
+    { char: "貉", meaning: "담비 학" },
+    { char: "䓼", meaning: "돼지 소리 학" }
+  
+  ,
   ],
   "한": [
     { char: "佷", meaning: "잔인할 한" },
@@ -10069,6 +12539,8 @@ const HANJA_DB = {
     { char: "鮭", meaning: "와롱 와" },
     { char: "鮭", meaning: "복어 규" },
     { char: "龤", meaning: "조화로울 해" },
+    { char: "䜕", meaning: "다투며 화낼 해" }
+  ,
   ],
   "핵": [
     { char: "劾", meaning: "캐물을 핵" },
@@ -10186,6 +12658,8 @@ const HANJA_DB = {
     { char: "鋗", meaning: "쓸 견" },
     { char: "顯", meaning: "드러날 현" },
     { char: "駽", meaning: "돗총이 현" },
+    { char: "盷", meaning: "큰 눈 현" }
+  ,
   ],
   "혈": [
     { char: "吷", meaning: "마실 혈" },
@@ -10199,6 +12673,10 @@ const HANJA_DB = {
     { char: "血", meaning: "피 혈" },
     { char: "趐", meaning: "날 혈" },
     { char: "頁", meaning: "머리 혈" },
+    { char: "烕", meaning: "없앨 혈" },
+    { char: "搣", meaning: "뽑을 혈" }
+  
+  ,
   ],
   "혐": [
     { char: "嫌", meaning: "싫어할 혐" },
@@ -10354,6 +12832,12 @@ const HANJA_DB = {
     { char: "頀", meaning: "구할 호" },
     { char: "餬", meaning: "기식할 호" },
     { char: "鬍", meaning: "수염 호" },
+    { char: "秏", meaning: "덜 호" },
+    { char: "幠", meaning: "덮을 호" },
+    { char: "㷻", meaning: "불에 탈 호" }
+  
+  
+  ,
   ],
   "혹": [
     { char: "惑", meaning: "미혹할 혹" },
@@ -10371,6 +12855,7 @@ const HANJA_DB = {
     { char: "婚", meaning: "혼인할 혼" },
     { char: "昆", meaning: "덩어리 혼" },
     { char: "昏", meaning: "어두울 혼" },
+    { char: "昏", meaning: "힘쓸 민" },
     { char: "棍", meaning: "묶을 혼" },
     { char: "混", meaning: "섞을 혼" },
     { char: "渾", meaning: "흐릴 혼" },
@@ -10380,6 +12865,20 @@ const HANJA_DB = {
     { char: "閽", meaning: "문지기 혼" },
     { char: "魂", meaning: "넋 혼" },
     { char: "鯇", meaning: "산천어 혼" },
+    { char: "湣", meaning: "어지러울 혼" },
+    { char: "㗃", meaning: "어두울 혼" },
+    { char: "怋", meaning: "어지러울 혼" },
+    { char: "㖧", meaning: "아득할 혼" },
+    { char: "惛", meaning: "흐릴 혼" },
+    { char: "痻", meaning: "앓을 혼" },
+    { char: "殙", meaning: "어리석을 혼" }
+  
+  
+  
+  
+  
+  
+  ,
   ],
   "홀": [
     { char: "唿", meaning: "근심할 홀" },
@@ -10388,6 +12887,16 @@ const HANJA_DB = {
     { char: "惚", meaning: "황홀할 홀" },
     { char: "核", meaning: "씨 홀" },
     { char: "笏", meaning: "홀 홀" },
+    { char: "䀜", meaning: "급히 볼 홀" },
+    { char: "䁫", meaning: "때 홀" },
+    { char: "芴", meaning: "흐릿할 홀" },
+    { char: "昒", meaning: "새벽 홀" },
+    { char: "㳷", meaning: "검푸를 홀" }
+  
+  
+  
+  
+  ,
   ],
   "홍": [
     { char: "哄", meaning: "떠들썩할 홍" },
@@ -10540,6 +13049,12 @@ const HANJA_DB = {
     { char: "隍", meaning: "해자 황" },
     { char: "鰉", meaning: "용상어 황" },
     { char: "黃", meaning: "누를 황" },
+    { char: "㠩", meaning: "거칠 황" },
+    { char: "朚", meaning: "내일 황" },
+    { char: "䀮", meaning: "희미할 황" }
+  
+  
+  ,
   ],
   "홰": [
     { char: "噦", meaning: "새소리 홰" },
@@ -10582,6 +13097,10 @@ const HANJA_DB = {
     { char: "迴", meaning: "돌아올 회" },
     { char: "鄶", meaning: "나라이름 회" },
     { char: "頮", meaning: "세수할 회" },
+    { char: "杤", meaning: "상수리나무 회" },
+    { char: "脄", meaning: "등심 회" }
+  
+  ,
   ],
   "획": [
     { char: "劃", meaning: "쪼갤 획" },
@@ -10758,6 +13277,8 @@ const HANJA_DB = {
   ],
   "흑": [
     { char: "黑", meaning: "검을 흑" },
+    { char: "嫼", meaning: "성낼 흑" }
+  ,
   ],
   "흔": [
     { char: "俒", meaning: "완전할 흔" },
@@ -10846,6 +13367,85 @@ const HANJA_DB = {
     { char: "詰", meaning: "물을 힐" },
     { char: "頡", meaning: "곧은목 힐" },
     { char: "黠", meaning: "약을 힐" },
+  ],
+};
+
+
+  "락(낙)": [
+    { char: "貉", meaning: "담비 락(낙)" }
+  ],
+};
+
+
+  "랑(낭)": [
+    { char: "樠", meaning: "나무 이름 랑(낭)" }
+  ],
+};
+
+
+  "맘": [
+    { char: "鋄", meaning: "말 머리 장 맘" },
+    { char: "錽", meaning: "말 머리 장 맘" },
+    { char: "䥑", meaning: "말 머리 장 맘" },
+    { char: "鎫", meaning: "말 머리 장 맘" },
+    { char: "㛧", meaning: "시골 이름 맘" }
+  ],
+};
+
+
+  "리(이)": [
+    { char: "薶", meaning: "막을 리(이)" },
+    { char: "氂", meaning: "꼬리 리(이)" },
+    { char: "氂", meaning: "길이 단위 리(이)" },
+    { char: "犛", meaning: "검은 소 리(이)" },
+    { char: "㹈", meaning: "검은 소 리(이)" }
+  ],
+};
+
+
+  "류(유)": [
+    { char: "茆", meaning: "갯버들 류(유)" },
+    { char: "鷚", meaning: "종달새 류(유)" },
+    { char: "㚹", meaning: "예쁠 류(유)" },
+    { char: "鉚", meaning: "쇠 류(유)" }
+  ],
+};
+
+
+  "렵(엽)": [
+    { char: "䭷", meaning: "수레 덮개 렵(엽)" }
+  ],
+};
+
+
+  "롱(농)": [
+    { char: "㙙", meaning: "바를 롱(농)" },
+    { char: "㴳", meaning: "어리석을 롱(농)" }
+  ],
+};
+
+
+  "룡(용)": [
+    { char: "㙙", meaning: "바를 룡(용)" }
+  ],
+};
+
+
+  "니(이)": [
+    { char: "濔", meaning: "많을 니(이)" },
+    { char: "檷", meaning: "실패 니(이)" }
+  ],
+};
+
+
+  "뢰(뇌)": [
+    { char: "頪", meaning: "엇비슷할 뢰(뇌)" }
+  ],
+};
+
+
+  "녜(예)": [
+    { char: "檷", meaning: "실패 녜(예)" }
   ],
 };
 
