@@ -143,7 +143,7 @@
 
 <script src="hanja_db.js"></script>
 <script>
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "여기에_GROQ_API_키_입력";
 
 const PINYIN_GUIDE = `
 ================================================================
@@ -160,7 +160,7 @@ z[쯔] c[츠] s[스]
 유기음: p t k q ch c → 강한 기식
 
 [운모 발음]
-a[아] o[오] e[으어] i[이] u[우] ü[위]
+a[아] o[오] e[으/어] i[이] u[우] ü[위]
 ai[아이] ei[에이] ui[웨이] ao[아오] ou[오우] iu[여우]
 ia[이아] ie[이에] ua[우아] uo[우어] üe[위에]
 an[안] en[언] in[인] un[운] ün[윈]
@@ -264,7 +264,7 @@ function doSearch(query) {
       if (seen.has(h.char)) return false;
       seen.add(h.char);
       const code = h.char.codePointAt(0);
-      return code >= 0x4E00 && code <= 0x9FFF;
+      return (code >= 0x4E00 && code <= 0x9FFF) || (code >= 0x3400 && code <= 0x4DBF) || (code >= 0x20000 && code <= 0x2FFFF);
     }).map(h => ({ ...h, reading: keyword }));
   } else {
     const seen = new Set();
@@ -273,7 +273,7 @@ function doSearch(query) {
         if (h.meaning.includes(keyword) && !seen.has(h.char)) {
           seen.add(h.char);
           const code = h.char.codePointAt(0);
-          if (code >= 0x4E00 && code <= 0x9FFF) results.push({ ...h, reading: sound });
+          if ((code >= 0x4E00 && code <= 0x9FFF) || (code >= 0x3400 && code <= 0x4DBF) || (code >= 0x20000 && code <= 0x2FFFF)) results.push({ ...h, reading: sound });
           if (results.length >= 30) break;
         }
       }
@@ -386,10 +386,14 @@ async function getSimplified(hanja) {
   });
   const data = await response.json();
   const text = data.choices?.[0]?.message?.content || "{}";
-  const clean = text.replace(/```json|```/g, "").trim();
+  let clean = text.replace(/```json|```/g, "").trim();
+  // 응답 안에서 JSON 객체 부분만 추출 (앞뒤 설명 텍스트가 붙어도 동작하도록)
+  const jsonMatch = clean.match(/\{[\s\S]*\}/);
+  if (jsonMatch) clean = jsonMatch[0];
   try {
     return JSON.parse(clean);
-  } catch {
+  } catch (e) {
+    console.error("간화자 JSON 파싱 실패:", text);
     return {};
   }
 }
