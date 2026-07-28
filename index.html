@@ -143,7 +143,7 @@
 
 <script src="hanja_db.js"></script>
 <script>
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "여기에_GROQ_API_키_입력";
 
 const PINYIN_GUIDE = `
 ================================================================
@@ -232,6 +232,7 @@ function closeModal(e) {
   if (e.target === document.getElementById("overlay")) closeModalDirect();
 }
 function closeModalDirect() {
+  if (searchTimer) { clearTimeout(searchTimer); searchTimer = null; }
   document.getElementById("overlay").classList.add("hidden");
   document.getElementById("modalInput").value = "";
   document.getElementById("modalResults").innerHTML = '<p class="modal-msg">위에 검색어를 입력해보세요.</p>';
